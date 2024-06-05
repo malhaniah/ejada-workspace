@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+
+:root {
+    /* Used for Main elements / CTA / Icons / Emphasized texts / Headings */
+    --ejada-primary: #001081;
+    --ejada-secondary: #C5CFDA;
+    --ejada-accent: #1FED93;
+    /* Used for Cards/ Containers / outlined buttons hover*/
+    --ejada-primary-bg: #F2F4FF;
+    --ejada-secondary-bg: #F3F5F8;
+    --ejada-accent-bg: #E9FDF4;
+    /* Used for Cards / Containers */
+    --ejada-primary-light: #525DC1;
+    /* Used for CTA hover */
+    --ejada-primary-dark: #000C5E;
+    --ejada-secondary-dark: #42566B;
+    --ejada-accent-dark: #10774A;
+    /* Objects hover */
+    --ejada-primary-hover: #D4D6F0;
+    --ejada-secondary-hover: #D6DDE5;
+    --ejada-accent-hover: #B8F7D2;
+
+    /* --- Text Related --- */
+    --text-primary: #0000FF;
+    --text-primary-bg: #F7F9FF;
+    --text-primary-light: #4477FF;
+    --text-primary-dark: #1616BC;
+
+    /* Disabled */
+    --disabled: #F1F1F5;
+
+    /* --- Headings --- */
+    --heading-4xl: 102px;
+    --heading-3xl: 64px;
+    --heading-2xl: 48px;
+    --heading-xl: 40px;
+    --heading-lg: 32px;
+    --heading-md: 24px;
+    /* --- Body --- */
+    --body-lg: 24px;
+    --body-md: 16px;
+    --body-sm: 14px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Readex Pro', sans-serif;
+}
