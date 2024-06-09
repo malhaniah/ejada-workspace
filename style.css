@@ -28,12 +28,15 @@
   --text-primary: #0000ff;
   --text-primary-bg: #f7f9ff;
   --text-primary-light: #4477ff;
-  --text-primary-dark: #1616bc;
+  --text-primary-dark: #001081;
   --text-natural-gray: #616161;
   --text-natural-light-gray: #a3a3a8;
+  --text-natural-slate: #1f2940;
 
   /* Variant Background */
   --variant-bg: #f9f9f9;
+  --variant-bg-certificate: #bdc7d6;
+  --variant-bg-certificate-badge: #1f2940;
 
   /* Disabled */
   --disabled: #f1f1f5;
@@ -63,7 +66,8 @@
   --rounded-lg: 8px;
   --rounded-full: 100px;
   /* --- Gradiants --- */
-  --gradient: linear-gradient(45deg, #000c5e 50%, #0000ff 100%);
+  --primary-gradient: linear-gradient(45deg, #000c5e 50%, #0000ff 100%);
+  --secondary-gradient: linear-gradient(90deg, #5c2684 0%, #05133f 100%);
 
   /* --- Shadows --- */
   --shadow: 0px 1px 1px 0px rgba(64, 64, 66, 0.08),
@@ -82,6 +86,10 @@
 
 body {
   overflow-x: hidden;
+}
+
+main {
+  padding: 30px 0;
 }
 
 /* General Styles */
@@ -141,6 +149,10 @@ body {
   color: white;
 }
 
+.text-slate {
+  color: var(--text-natural-slate);
+}
+
 .text-primary {
   color: var(--text-primary);
 }
@@ -175,6 +187,18 @@ body {
 
 .decoration-none {
   text-decoration: none;
+}
+
+.variant-bg {
+  background: var(--variant-bg);
+}
+
+.gradient-primary {
+  background: var(--primary-gradient);
+}
+
+.gradient-secondary {
+  background: var(--secondary-gradient);
 }
 
 .search-component {
@@ -237,6 +261,26 @@ body {
   color: white;
 }
 
+.outlined-btn.white {
+  border: 2px solid white;
+  color: white;
+  background: transparent;
+}
+
+.outlined-btn.white:hover {
+  background: white;
+  color: var(--ejada-primary);
+}
+
+.circle-xs {
+  width: 20px;
+  height: 20px;
+  border-radius: var(--rounded-full);
+}
+
+.bg-accent {
+  background: var(--ejada-accent);
+}
 /* ---- End Of General Styles ---- */
 
 /* ------ Start Of Waffle Button Style ------ */
@@ -363,11 +407,23 @@ nav {
   justify-content: space-between;
   align-items: flex-start;
   padding: 120px 140px;
+  gap: 10rem;
 }
 
 .hero:has(.outlined-btn) .outlined-btn,
 .hero:has(.filled-btn) .filled-btn {
   margin-top: 96px;
+}
+
+.hero {
+  flex: 1;
+  aspect-ratio: 16 / 9;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* ------ End Of Header ------ */
@@ -514,6 +570,8 @@ nav {
 
 /* ------ End Of Partners ------ */
 
+/* ----- Start Of Paragraph ----- */
+
 .paragraph {
   display: flex;
   flex-flow: row nowrap;
@@ -537,9 +595,104 @@ nav {
   color: #666;
 }
 
+/* ----- End Of Paragraph ----- */
+
+/* ----- Start Of Certificates ----- */
+
+.certificates-partners {
+  padding: 128px 96px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.certificates-partners div {
+  flex: 1;
+  flex-basis: 25%;
+}
+
+.certificates-partners .certificate-wrapper {
+  display: flex;
+  border-radius: var(--rounded-lg);
+  flex-flow: row nowrap;
+  overflow: hidden;
+}
+
+.certificates-partners .certificate-wrapper .certificate {
+  min-height: 100%;
+  min-width: 100%;
+  background: var(--variant-bg-certificate);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 24px 32px;
+  aspect-ratio: 16 / 9;
+}
+
+.certificates-partners .certificate-wrapper .certificate .content {
+  display: flex;
+  height: 100%;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.certificates-partners
+  .certificate-wrapper
+  .certificate
+  .content
+  .certificate-info {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.certificates-partners .certificate-wrapper .certificate:not(.badge) img {
+  max-width: 15%;
+  object-fit: contain;
+}
+
+.certificates-partners .certificate-wrapper .badge {
+  background: var(--variant-bg-certificate-badge);
+}
+
+.certificates-partners .certificate-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.card-component {
+  padding: 50px 160px;
+  width: 1200px;
+  height: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 40px;
+  z-index: 1;
+}
+
+.card-component p {
+  width: 70%;
+}
+
+.card-component img {
+  position: absolute;
+  top: -10%;
+  left: -7%;
+  height: 100%;
+  object-fit: contain;
+  z-index: -1;
+}
+
+/* ----- End Of Certificates ----- */
 
 /* ----- Start Of Footer ----- */
-footer{
+footer {
   background: var(--ejada-primary);
   padding: 96px 64px;
   display: flex;
@@ -547,7 +700,7 @@ footer{
   justify-content: space-between;
 }
 
-.brand{
+.brand {
   flex: 1;
   display: flex;
   flex-flow: column nowrap;
@@ -556,19 +709,17 @@ footer{
   gap: 1rem;
 }
 
-.brand img{
+.brand img {
   max-width: 100%;
   height: 40%;
   object-fit: contain;
 }
 
-.brand p{
+.brand p {
   color: white;
 }
 
-
-
-.links-container{
+.links-container {
   flex: 1;
   display: flex;
   flex-flow: row nowrap;
@@ -583,14 +734,14 @@ footer{
   gap: 1rem;
 }
 
-.links ul{
+.links ul {
   list-style: none;
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem;
 }
 
-.links ul li a{
+.links ul li a {
   text-decoration: none;
   color: white;
 }
