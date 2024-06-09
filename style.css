@@ -1,51 +1,268 @@
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap");
 
 :root {
-    /* Used for Main elements / CTA / Icons / Emphasized texts / Headings */
-    --ejada-primary: #001081;
-    --ejada-secondary: #C5CFDA;
-    --ejada-accent: #1FED93;
-    /* Used for Cards/ Containers / outlined buttons hover*/
-    --ejada-primary-bg: #F2F4FF;
-    --ejada-secondary-bg: #F3F5F8;
-    --ejada-accent-bg: #E9FDF4;
-    /* Used for Cards / Containers */
-    --ejada-primary-light: #525DC1;
-    /* Used for CTA hover */
-    --ejada-primary-dark: #000C5E;
-    --ejada-secondary-dark: #42566B;
-    --ejada-accent-dark: #10774A;
-    /* Objects hover */
-    --ejada-primary-hover: #D4D6F0;
-    --ejada-secondary-hover: #D6DDE5;
-    --ejada-accent-hover: #B8F7D2;
+  /* Used for Main elements / CTA / Icons / Emphasized texts / Headings */
+  --ejada-primary: #001081;
+  --ejada-secondary: #c5cfda;
+  --ejada-accent: #1fed93;
 
-    /* --- Text Related --- */
-    --text-primary: #0000FF;
-    --text-primary-bg: #F7F9FF;
-    --text-primary-light: #4477FF;
-    --text-primary-dark: #1616BC;
+  /* Used for Cards/ Containers / outlined buttons hover*/
+  --ejada-primary-bg: #f2f4ff;
+  --ejada-secondary-bg: #f3f5f8;
+  --ejada-accent-bg: #e9fdf4;
 
-    /* Disabled */
-    --disabled: #F1F1F5;
+  /* Used for Cards / Containers */
+  --ejada-primary-light: #525dc1;
 
-    /* --- Headings --- */
-    --heading-4xl: 102px;
-    --heading-3xl: 64px;
-    --heading-2xl: 48px;
-    --heading-xl: 40px;
-    --heading-lg: 32px;
-    --heading-md: 24px;
-    /* --- Body --- */
-    --body-lg: 24px;
-    --body-md: 16px;
-    --body-sm: 14px;
+  /* Used for CTA hover */
+  --ejada-primary-dark: #000c5e;
+  --ejada-secondary-dark: #42566b;
+  --ejada-accent-dark: #10774a;
 
+  /* Objects hover */
+  --ejada-primary-hover: #d4d6f0;
+  --ejada-secondary-hover: #d6dde5;
+  --ejada-accent-hover: #b8f7d2;
+
+  /* --- Text Related --- */
+  --text-primary: #0000ff;
+  --text-primary-bg: #f7f9ff;
+  --text-primary-light: #4477ff;
+  --text-primary-dark: #1616bc;
+  --text-natural-gray: #616161;
+  --text-natural-light-gray: #a3a3a8;
+
+  /* Disabled */
+  --disabled: #f1f1f5;
+
+  /* --- Headings --- */
+  --heading-4xl: 102px;
+  --heading-3xl: 64px;
+  --heading-2xl: 48px;
+  --heading-xl: 40px;
+  --heading-lg: 32px;
+  --heading-md: 24px;
+
+  /* --- Body --- */
+  --body-lg: 24px;
+  --body-md: 16px;
+  --body-sm: 14px;
+
+  /* --- Weight --- */
+  --bold: 700;
+  --semi-bold: 600;
+  --medium: 500;
+  --regular: 400;
+
+  /* Radiuses */
+  --rounded: 4px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Readex Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Readex Pro", sans-serif;
+}
+
+/* General Styles */
+.text-4xl {
+  font-size: var(--heading-4xl);
+}
+
+.text-3xl {
+  font-size: var(--heading-3xl);
+}
+
+.text-2xl {
+  font-size: var(--heading-2xl);
+}
+
+.text-xl {
+  font-size: var(--heading-xl);
+}
+
+.text-lg {
+  font-size: var(--heading-lg);
+}
+
+.text-md {
+  font-size: var(--heading-md);
+}
+
+.text-sm {
+  font-size: var(--body-md);
+}
+
+.text-xs {
+  font-size: var(--body-sm);
+}
+
+.text-bold {
+  font-weight: var(--bold);
+}
+
+.text-semi-bold {
+  font-weight: var(--semi-bold);
+}
+
+.text-medium {
+  font-weight: var(--medium);
+}
+
+.text-regular {
+  font-weight: var(--regular);
+}
+
+.text-white {
+  color: white;
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.search-component {
+  min-width: 460px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: var(--rounded);
+}
+
+.search-component img {
+  width: 20px;
+  height: 20px;
+}
+
+.search-component input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+.search-component input::placeholder {
+  color: var(--text-natural-gray);
+  font-size: var(--body-sm);
+}
+
+/* ---- End Of General Styles ---- */
+
+/* ------ Start Of Waffle Button Style ------ */
+.waffle {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  gap: 5px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.waffle:hover {
+  background: var(--ejada-secondary-hover);
+}
+
+.waffle .sub-waffle {
+  display: flex;
+  gap: 5px;
+}
+
+.waffle .sub-waffle span {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: white;
+}
+
+/* ------ End Of Waffle Button Style ------ */
+
+/* ------ Start Of Header ------ */
+header {
+  width: 100%;
+}
+
+.sharepoint {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--ejada-primary);
+}
+
+.sharepoint .component {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sharepoint .component.justify-center {
+  justify-content: center;
+}
+
+.sharepoint .component.justify-start {
+  justify-content: flex-start;
+}
+
+.sharepoint .component.justify-end {
+  justify-content: flex-end;
+}
+
+.sharepoint .component .sub-component {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 35px 64px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-list .nav-item {
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-list .nav-item.active::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--ejada-primary);
+}
+
+.nav-list .nav-link {
+  color: var(--text-primary);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-natural-light-gray);
+  transition: all 200ms ease-in-out;
+}
+
+.nav-list .nav-item.active .nav-link,
+.nav-list .nav-link:hover {
+  color: var(--text-primary-dark);
 }
