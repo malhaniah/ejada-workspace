@@ -42,17 +42,17 @@
   --disabled: #f1f1f5;
 
   /* --- Headings --- */
-  --heading-4xl: 102px;
-  --heading-3xl: 64px;
-  --heading-2xl: 48px;
-  --heading-xl: 40px;
-  --heading-lg: 32px;
-  --heading-md: 24px;
+  --heading-4xl: 6.375rem; /* 102px / 16 = 6.375rem */
+  --heading-3xl: 4rem; /* 64px / 16 = 4rem */
+  --heading-2xl: 3rem; /* 48px / 16 = 3rem */
+  --heading-xl: 2.5rem; /* 40px / 16 = 2.5rem */
+  --heading-lg: 2rem; /* 32px / 16 = 2rem */
+  --heading-md: 1.5rem; /* 24px / 16 = 1.5rem */
 
   /* --- Body --- */
-  --body-lg: 24px;
-  --body-md: 16px;
-  --body-sm: 14px;
+  --body-lg: 1.5rem; /* 24px */
+  --body-md: 1rem; /* 16px */
+  --body-sm: 0.875rem; /* 14px */
 
   /* --- Weight --- */
   --bold: 700;
@@ -65,7 +65,7 @@
   --rounded: 4px;
   --rounded-lg: 8px;
   --rounded-full: 100px;
-  /* --- Gradiants --- */
+  /* --- Gradients --- */
   --primary-gradient: linear-gradient(45deg, #000c5e 50%, #0000ff 100%);
   --secondary-gradient: linear-gradient(90deg, #5c2684 0%, #05133f 100%);
 
@@ -281,6 +281,25 @@ main {
 .bg-accent {
   background: var(--ejada-accent);
 }
+
+.image-container {
+  flex: 1; /* Allow the container to grow and shrink */
+  max-width: 100%; /* Ensure the container doesn't exceed the viewport width */
+  aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  overflow: hidden; /* Ensure any overflow is hidden */
+  display: flex; /* Enable flexbox within the container */
+  align-items: center; /* Center the image vertically */
+  justify-content: center; /* Center the image horizontally */
+}
+
+.image-container img {
+  width: 100%; /* Make the image width 100% of its container */
+  height: 100%; /* Make the image height 100% of its container */
+  object-fit: contain; /* Ensure the image covers the container, cropping if necessary */
+  display: block; /* Remove default inline spacing */
+}
+
 /* ---- End Of General Styles ---- */
 
 /* ------ Start Of Waffle Button Style ------ */
@@ -359,13 +378,13 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 35px 64px;
+  padding: 35px 32px;
 }
 
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 1rem;
   list-style: none;
 }
 
@@ -376,7 +395,7 @@ nav {
 
 /* For later use */
 
-/* .nav-list .nav-item.active::after {
+.nav-list .nav-item.active::after{
   content: "";
   position: absolute;
   bottom: -10px;
@@ -384,7 +403,7 @@ nav {
   width: 100%;
   height: 2px;
   background: var(--ejada-primary);
-} */
+}
 
 .nav-list .nav-link {
   color: var(--text-primary);
@@ -472,8 +491,8 @@ nav {
 }
 
 .partners-categories {
+  flex: 2;
   background: white;
-  min-width: 400px;
   min-height: 700px;
   border-radius: var(--rounded-lg);
   padding: 24px 32px;
@@ -519,15 +538,15 @@ nav {
 }
 
 .partners {
-  flex: 1;
+  flex: 7;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
   gap: 1rem;
 }
 
 .partners .partner {
-  flex-basis: 32%;
+  flex-basis: 25%;
+  flex-grow: 2;
   height: auto;
   display: flex;
   background: white;
@@ -744,4 +763,93 @@ footer {
 .links ul li a {
   text-decoration: none;
   color: white;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    /* Adjusted font sizes for screens smaller than 1200px */
+    --heading-4xl: 5.5rem;
+    --heading-3xl: 3.5rem;
+    --heading-2xl: 2.75rem;
+    --heading-xl: 2.25rem;
+    --heading-lg: 1.75rem;
+    --heading-md: 1.375rem;
+
+    --body-lg: 1.375rem;
+    --body-md: 0.9375rem;
+    --body-sm: 0.8125rem;
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    /* Adjusted font sizes for screens smaller than 992px */
+    --heading-4xl: 4.75rem;
+    --heading-3xl: 3rem;
+    --heading-2xl: 2.5rem;
+    --heading-xl: 2rem;
+    --heading-lg: 1.5rem;
+    --heading-md: 1.25rem;
+
+    --body-lg: 1.25rem;
+    --body-md: 0.875rem;
+    --body-sm: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    /* Adjusted font sizes for screens smaller than 768px */
+    --heading-4xl: 4rem;
+    --heading-3xl: 2.5rem;
+    --heading-2xl: 2rem;
+    --heading-xl: 1.75rem;
+    --heading-lg: 1.375rem;
+    --heading-md: 1.125rem;
+
+    --body-lg: 1.125rem;
+    --body-md: 0.8125rem;
+    --body-sm: 0.6875rem;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    /* Adjusted font sizes for screens smaller than 576px */
+    --heading-4xl: 3.5rem;
+    --heading-3xl: 2.25rem;
+    --heading-2xl: 1.75rem;
+    --heading-xl: 1.5rem;
+    --heading-lg: 1.25rem;
+    --heading-md: 1rem;
+
+    --body-lg: 1rem;
+    --body-md: 0.75rem;
+    --body-sm: 0.625rem;
+  }
+}
+
+/* Optional: Add some media queries for different screen sizes */
+@media (max-width: 1200px) {
+  .image-container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .image-container {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  .image-container {
+    max-width: 100%;
+  }
 }

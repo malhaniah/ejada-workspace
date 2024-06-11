@@ -1,9 +1,10 @@
 // Function to toggle the active state of the current active nav
 (function toggleCurrentActiveNav() {
   // Attach a click event listener to each nav-item
-  $(".nav-item").on("click", function () {
-    // Remove the active class from all nav-item elements
-    $(".nav-item").removeClass("active");
+  const navItems = $(".nav-item");
+  navItems.has(".nav-link:not(:has(img))").on("click", function () {
+    // Remove the active class from all nav-items
+    navItems.removeClass("active");
 
     // Add the active class to the clicked nav-item
     $(this).addClass("active");
