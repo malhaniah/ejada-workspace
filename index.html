@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejada Workspace</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
@@ -24,12 +24,12 @@
             </div>
           </div>
           <img src="/assets/logos/logo-white-minimal.svg" alt="minimal logo" />
-          <h3 class="text-sm text-white text-semi-bold">SharePoint</h3>
+          <h3 class="text-sm text-white font-semibold">SharePoint</h3>
         </div>
         <!-- Search Component -->
         <div class="component justify-center">
-          <div class="search-component">
-            <img src="/assets/icons/saerch.svg" />
+          <div class="search-component p-2 px-3 rounded-md">
+            <img src="/assets/icons/search.svg" />
             <input type="text" placeholder="Search this site" />
           </div>
         </div>
@@ -89,25 +89,1181 @@
           <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
         </ul>
         <div class="greetings">
-          <h3 class="text-sm text-regular text-primary-dark">
+          <h3 class="text-sm font-normal text-primary-dark">
             Welcome Back!, Mohammed.
           </h3>
         </div>
       </nav>
-      <div class="hero-container">
-        <div class="hero">
-          <h1 class="text-xl text-accent text-medium">Welcome, Mohammed.</h1>
-          <p class="text-white text-thin text-sm">
+      <div class="hero-container gradient-primary">
+        <div class="hero flex flex-col gap-4">
+          <h1 class="text-xl text-accent font-medium">Welcome, Mohammed.</h1>
+          <p class="text-white font-light text-sm">
             Aut magni rem quia aliquam molestiae. Impedit consequatur eaque
             facere iure rerum nes ciunt
           </p>
-          <div class="search-component">
-            <input type="text">
-            <img src="/assets/icons/">
+          <div class="search-component p-4 rounded-lg">
+            <input type="text" placeholder="Search this site" />
+            <img src="/assets/icons/microphone.svg" />
+          </div>
+          <div class="flex gap-4 justify-between pt-6">
+            <span class="flex items-center gap-2 text-white text-xs">
+              Top Searched Item
+              <img src="/assets/icons/info.svg" />
+            </span>
+            <span class="flex items-center gap-2 text-white text-xs">
+              Top Searched Item
+              <img src="/assets/icons/info.svg" />
+            </span>
+            <span class="flex items-center gap-2 text-white text-xs">
+              Top Searched Item
+              <img src="/assets/icons/info.svg" />
+            </span>
+            <span class="flex items-center gap-2 text-white text-xs">
+              Top Searched Item
+              <img src="/assets/icons/info.svg" />
+            </span>
+          </div>
+        </div>
+        <div class="hero">
+          <h3 class="text-xl text-white font-light quote">Quick Actions</h3>
+          <div class="flex gap-4 flex-wrap pt-6">
+            <button class="outlined-btn accent action-btn flex rounded-md">
+              <img src="/assets/icons/help.svg" />
+
+              <span class="flex-1 text-xs"> IT Helpdesk </span>
+            </button>
+            <button class="outlined-btn accent action-btn flex rounded-md">
+              <img src="/assets/icons/calender.svg" />
+              <span class="flex-1 text-xs"> Holidays </span>
+            </button>
+            <button class="outlined-btn accent action-btn flex rounded-md">
+              <img src="/assets/icons/calender-minus.svg" />
+
+              <span class="flex-1 text-xs"> Time Off </span>
+            </button>
+            <button class="outlined-btn accent action-btn flex rounded-md">
+              <img src="/assets/icons/document.svg" />
+
+              <span class="flex-1 text-xs"> Time Sheets </span>
+            </button>
+            <button class="outlined-btn accent action-btn flex rounded-md">
+              <img src="/assets/icons/group.svg" />
+
+              <span class="flex-1 text-xs"> Careers </span>
+            </button>
+            <button class="outlined-btn accent action-btn flex rounded-md">
+              <img src="/assets/icons/graduation-hat.svg" />
+
+              <span class="flex-1 text-xs"> Learn Central </span>
+            </button>
+            <button class="outlined-btn accent action-btn flex rounded-md">
+              <img src="/assets/icons/medal.svg" />
+
+              <span class="flex-1 text-xs"> Benefits </span>
+            </button>
+            <button class="outlined-btn accent action-btn flex rounded-md">
+              <img src="/assets/icons/wallet.svg" />
+
+              <span class="flex-1 text-xs"> Expenses </span>
+            </button>
+            <button class="outlined-btn accent action-btn flex rounded-md">
+              <img src="/assets/icons/borken-document.svg" />
+
+              <span class="flex-1 text-xs"> Directory </span>
+            </button>
           </div>
         </div>
       </div>
     </header>
+    <main>
+      <div class="flex gap-4 justify-between px-6 py-6">
+        <div class="shadow rounded-lg p-12 flex-basis-4 h-fit flex flex-col">
+          <div class="flex gap-4 items-center justify-between">
+            <h2 class="text-lg font-medium text-primary-dark">
+              Forms & Templates
+            </h2>
+            <div class="search-component p-4 rounded-lg border border-gray-200">
+              <input type="text" placeholder="Search this site" />
+              <img src="/assets/icons/microphone.svg" />
+            </div>
+          </div>
+          <div class="flex gap-4 pt-6 flex-wrap w-full">
+            <div
+              class="gradient-primary-0 py-6 flex-grow-1 flex-1 flex-basis-1 flex items-center justify-center text-white rounded-lg"
+            >
+              COMPLIANCE
+            </div>
+            <div
+              class="gradient-primary-0 py-6 flex-grow-1 flex-1 flex-basis-1 flex items-center justify-center text-white rounded-lg"
+            >
+              LEGAL
+            </div>
+            <div
+              class="gradient-primary-0 py-6 flex-grow-1 flex-1 flex-basis-1 flex items-center justify-center text-white rounded-lg"
+            >
+              TRAINING
+            </div>
+            <div
+              class="gradient-primary-0 py-6 flex-grow-1 flex-1 flex-basis-1 flex items-center justify-center text-white rounded-lg"
+            >
+              PERFORMANCE
+            </div>
+            <div
+              class="gradient-primary-0 py-6 flex-grow-1 flex-1 flex-basis-1 flex items-center justify-center text-white rounded-lg"
+            >
+              ONBOARDING
+            </div>
+            <div
+              class="gradient-primary-0 py-6 flex-grow-1 flex-1 flex-basis-1 flex items-center justify-center text-white rounded-lg"
+            >
+              PAYROLL
+            </div>
+            <div
+              class="gradient-primary-0 py-6 flex-grow-1 flex-1 flex-basis-1 flex items-center justify-center text-white rounded-lg"
+            >
+              PRIVACY
+            </div>
+            <div
+              class="gradient-primary-0 py-6 flex-grow-1 flex-1 flex-basis-1 flex items-center justify-center text-white rounded-lg"
+            >
+              JOB DESCRIPTION
+            </div>
+            <div
+              class="gradient-primary-0 py-6 flex-grow-1 flex-1 flex-basis-1 flex items-center justify-center text-white rounded-lg"
+            >
+              SOP'S
+            </div>
+            <div
+              class="gradient-primary-0 py-6 flex-grow-1 flex-1 flex-basis-1 flex items-center justify-center text-white rounded-lg"
+            >
+              EMPLOYEE HANDBOOK
+            </div>
+            <div
+              class="gradient-primary-0 py-6 flex-grow-1 flex-1 flex-basis-1 flex items-center justify-center text-white rounded-lg"
+            >
+              PROJECTS
+            </div>
+            <div
+              class="gradient-primary-0 py-6 flex-grow-1 flex-1 flex-basis-1 flex items-center justify-center text-white rounded-lg"
+            >
+              MARKETING COLLATERALS
+            </div>
+          </div>
+        </div>
+        <div class="shadow rounded-lg px-6 flex-basis-2 py-6">
+          <div class="flex items-center justify-between">
+            <h1 class="text-lg font-medium text-primary-dark">
+              Public Documents
+            </h1>
+            <span class="text-sm text-primary">See all</span>
+          </div>
+          <div
+            class="flex justify-between gap-4 pt-6 border-b border-b-gray-100 py-4"
+          >
+            <div class="flex items-center gap-4">
+              <div class="flex gap-2 items-center">
+                <img src="/assets/icons/add.svg" />
+                New
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="/assets/icons/Upload.svg" />
+                Upload
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="/assets/icons/three-dots.svg" />
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="flex gap-2 items-center">
+                <img src="/assets/icons/list.svg" />
+                All Documents
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="/assets/icons/ms-info.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="py-3 flex flex-col">
+            <div class="flex justify-between border-b py-4 border-b-gray-100">
+              <div class="flex items-center gap-4">
+                <img src="/assets/icons/genericfile.svg" />
+                <div class="flex items-center gap-1">
+                  Name
+                  <img src="/assets/icons/arrow.svg" />
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="flex items-center gap-1">
+                  Modified
+                  <img src="/assets/icons/arrow.svg" />
+                </div>
+                <div>Modified</div>
+              </div>
+            </div>
+            <div class="flex justify-between border-b border-b-gray-100 py-4">
+              <div class="flex items-center gap-4">
+                <img src="/assets/icons/pdf.svg" />
+                <div class="flex items-center gap-1">Doc name</div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="text-xs text-gray">Doc property</div>
+                <div class="text-xs text-gray">Doc proper</div>
+              </div>
+            </div>
+
+            <div class="flex justify-between border-b border-b-gray-100 py-4">
+              <div class="flex items-center gap-4">
+                <img src="/assets/icons/pptx.svg" />
+                <div class="flex items-center gap-1">Doc name</div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="text-xs text-gray">Doc property</div>
+                <div class="text-xs text-gray">Doc proper</div>
+              </div>
+            </div>
+
+            <div class="flex justify-between border-b border-b-gray-100 py-4">
+              <div class="flex items-center gap-4">
+                <img src="/assets/icons/docx.svg" />
+                <div class="flex items-center gap-1">Doc name</div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="text-xs text-gray">Doc property</div>
+                <div class="text-xs text-gray">Doc proper</div>
+              </div>
+            </div>
+
+            <div class="flex justify-between border-b border-b-gray-100 py-4">
+              <div class="flex items-center gap-4">
+                <img src="/assets/icons/pptx.svg" />
+                <div class="flex items-center gap-1">Doc name</div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="text-xs text-gray">Doc property</div>
+                <div class="text-xs text-gray">Doc proper</div>
+              </div>
+            </div>
+
+            <div class="flex justify-between border-b border-b-gray-100 py-4">
+              <div class="flex items-center gap-4">
+                <img src="/assets/icons/xlsx.svg" />
+                <div class="flex items-center gap-1">Doc name</div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="text-xs text-gray">Doc property</div>
+                <div class="text-xs text-gray">Doc proper</div>
+              </div>
+            </div>
+
+            <div class="flex justify-between border-b border-b-gray-100 py-4">
+              <div class="flex items-center gap-4">
+                <img src="/assets/icons/pdf.svg" />
+                <div class="flex items-center gap-1">Doc name</div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="text-xs text-gray">Doc property</div>
+                <div class="text-xs text-gray">Doc proper</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="variant-bg p-24 flex items-center gap-4">
+        <div class="flex flex-col gap-3 flex-basis-2 flex-grow-even">
+          <div class="w-4-5">
+            <h2 class="text-primary text-sm uppercase">EXPERIENCE NEXT</h2>
+            <h1 class="text-primary-dark text-2xl">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum
+              amet at molestie mattis.
+            </h1>
+          </div>
+          <div class="flex py-6 gap-4">
+            <div class="flex flex-col gap-3">
+              <img class="w-12" src="/assets/icons/pulse.svg" />
+              <span class="text-gray text-sm w-80"
+                >Curabitur magna cras euismod pharetra, mauris malesuada sit
+                enim, elementum.</span
+              >
+            </div>
+            <div class="flex flex-col gap-3 w-80">
+              <img class="w-12" src="/assets/icons/cup.svg" />
+              <span class="text-gray text-sm"
+                >Curabitur magna cras euismod pharetra, mauris malesuada sit
+                enim, elementum.</span
+              >
+            </div>
+          </div>
+          <div class="flex gap-4 py-6">
+            <button class="filled-btn rounded-md text-sm">About Us</button>
+            <button class="outlined-btn rounded-md text-sm">Learn More</button>
+          </div>
+        </div>
+        <div class="flex-basis-2 flex justify-end">
+          <img class="w-2-3" src="/assets/images/picture.png" />
+        </div>
+      </div>
+      <div class="p-12 flex flex-col">
+        <h1 class="text-primary-dark text-xl font-semibold">
+          Events and Announcements
+        </h1>
+        <div class="flex gap-8 py-full">
+          <div class="px-6 py-6 flex flex-col gap-4">
+            <h3 class="text-primary text-lg font-medium">Featured Events</h3>
+            <p class="text-gray">
+              Aut magni rem quia aliquam molestiae. Impedit consequatur eaque
+              facere iure rerum nes ciunt voluptatem et. Delectus eum vitae
+              architecto. Dolores nostrum enim et tenetur
+            </p>
+          </div>
+          <div class="flex flex-col gap-4 py-6">
+            <div class="flex gap-4">
+              <div class="rounded-lg shadow overflow-hidden">
+                <div>
+                  <img src="/assets/images/event-1.png" />
+                </div>
+                <div class="flex flex-col justify-between p-4 gap-8">
+                  <div>
+                    <span class="text-xs text-gray">Category</span>
+                    <h3 class="text-primary-dark text-sm font-medium">
+                      Event Title goes here
+                    </h3>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="text-xs text-gray"
+                      >Tuesday, Jun 5, 12 AM - 1:00 PM</span
+                    >
+                    <span class="text-xs text-primary">Location</span>
+                  </div>
+                </div>
+                <div class="border-t border-t-gray-100 p-2 px-4">
+                  <img src="/assets/icons/Icon.svg" alt="" />
+                </div>
+              </div>
+              <div class="rounded-lg shadow overflow-hidden">
+                <div>
+                  <img src="/assets/images/event-2.png" />
+                </div>
+                <div class="flex flex-col justify-between p-4 gap-8">
+                  <div>
+                    <span class="text-xs text-gray">Category</span>
+                    <h3 class="text-primary-dark text-sm font-medium">
+                      Event Title goes here
+                    </h3>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="text-xs text-gray"
+                      >Tuesday, Jun 5, 12 AM - 1:00 PM</span
+                    >
+                    <span class="text-xs text-primary">Location</span>
+                  </div>
+                </div>
+                <div class="border-t border-t-gray-100 p-2 px-4">
+                  <img src="/assets/icons/Icon.svg" alt="" />
+                </div>
+              </div>
+              <div class="rounded-lg shadow overflow-hidden">
+                <div>
+                  <img src="/assets/images/event-3.png" />
+                </div>
+                <div class="flex flex-col justify-between p-4 gap-8">
+                  <div>
+                    <span class="text-xs text-gray">Category</span>
+                    <h3 class="text-primary-dark text-sm font-medium">
+                      Event Title goes here
+                    </h3>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="text-xs text-gray"
+                      >Tuesday, Jun 5, 12 AM - 1:00 PM</span
+                    >
+                    <span class="text-xs text-primary">Location</span>
+                  </div>
+                </div>
+                <div class="border-t border-t-gray-100 p-2 px-4">
+                  <img src="/assets/icons/Icon.svg" alt="" />
+                </div>
+              </div>
+              <div class="rounded-lg shadow overflow-hidden">
+                <div>
+                  <img src="/assets/images/event-4.png" />
+                </div>
+                <div class="flex flex-col justify-between p-4 gap-8">
+                  <div>
+                    <span class="text-xs text-gray">Category</span>
+                    <h3 class="text-primary-dark text-sm font-medium">
+                      Event Title goes here
+                    </h3>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="text-xs text-gray"
+                      >Tuesday, Jun 5, 12 AM - 1:00 PM</span
+                    >
+                    <span class="text-xs text-primary">Location</span>
+                  </div>
+                </div>
+                <div class="border-t border-t-gray-100 p-2 px-4">
+                  <img src="/assets/icons/Icon.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-2 justify-center py-6">
+              <button class="rounded-full p-2 border border-primary bg-white">
+                <div class="rounded-full p-2 bg-primary border-0"></div>
+              </button>
+              <button class="rounded-full p-2 border border-primary bg-white">
+                <div class="rounded-full p-2"></div>
+              </button>
+              <button class="rounded-full p-2 border border-primary bg-white">
+                <div class="rounded-full p-2"></div>
+              </button>
+              <button class="rounded-full p-2 border border-primary bg-white">
+                <div class="rounded-full p-2"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-8">
+          <div class="px-6 py-6 flex flex-col gap-4">
+            <h3 class="text-primary text-lg font-medium">Top Announcements</h3>
+            <p class="text-gray">
+              Aut magni rem quia aliquam molestiae. Impedit consequatur eaque
+              facere iure rerum nes ciunt voluptatem et. Delectus eum vitae
+              architecto. Dolores nostrum enim et tenetur
+            </p>
+          </div>
+          <div class="flex flex-col gap-4 py-6">
+            <div class="flex gap-4">
+              <div class="rounded-lg shadow overflow-hidden">
+                <div>
+                  <img src="/assets/images/announc-1.png" />
+                </div>
+                <div class="flex flex-col justify-between p-4 gap-8">
+                  <div>
+                    <span class="text-xs text-gray">Category</span>
+                    <h3 class="text-primary-dark text-sm font-medium">
+                      Event Title goes here
+                    </h3>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="text-xs text-gray"
+                      >Tuesday, Jun 5, 12 AM - 1:00 PM</span
+                    >
+                    <span class="text-xs text-primary">Location</span>
+                  </div>
+                </div>
+                <div class="border-t border-t-gray-100 p-2 px-4">
+                  <img src="/assets/icons/Icon.svg" alt="" />
+                </div>
+              </div>
+              <div class="rounded-lg shadow overflow-hidden">
+                <div>
+                  <img src="/assets/images/announc-2.png" />
+                </div>
+                <div class="flex flex-col justify-between p-4 gap-8">
+                  <div>
+                    <span class="text-xs text-gray">Category</span>
+                    <h3 class="text-primary-dark text-sm font-medium">
+                      Event Title goes here
+                    </h3>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="text-xs text-gray"
+                      >Tuesday, Jun 5, 12 AM - 1:00 PM</span
+                    >
+                    <span class="text-xs text-primary">Location</span>
+                  </div>
+                </div>
+                <div class="border-t border-t-gray-100 p-2 px-4">
+                  <img src="/assets/icons/Icon.svg" alt="" />
+                </div>
+              </div>
+              <div class="rounded-lg shadow overflow-hidden">
+                <div>
+                  <img src="/assets/images/announc-3.png" />
+                </div>
+                <div class="flex flex-col justify-between p-4 gap-8">
+                  <div>
+                    <span class="text-xs text-gray">Category</span>
+                    <h3 class="text-primary-dark text-sm font-medium">
+                      Event Title goes here
+                    </h3>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="text-xs text-gray"
+                      >Tuesday, Jun 5, 12 AM - 1:00 PM</span
+                    >
+                    <span class="text-xs text-primary">Location</span>
+                  </div>
+                </div>
+                <div class="border-t border-t-gray-100 p-2 px-4">
+                  <img src="/assets/icons/Icon.svg" alt="" />
+                </div>
+              </div>
+              <div class="rounded-lg shadow overflow-hidden">
+                <div>
+                  <img src="/assets/images/announc-4.png" />
+                </div>
+                <div class="flex flex-col justify-between p-4 gap-8">
+                  <div>
+                    <span class="text-xs text-gray">Category</span>
+                    <h3 class="text-primary-dark text-sm font-medium">
+                      Event Title goes here
+                    </h3>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="text-xs text-gray"
+                      >Tuesday, Jun 5, 12 AM - 1:00 PM</span
+                    >
+                    <span class="text-xs text-primary">Location</span>
+                  </div>
+                </div>
+                <div class="border-t border-t-gray-100 p-2 px-4">
+                  <img src="/assets/icons/Icon.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-2 justify-center py-6">
+              <button class="rounded-full p-2 border border-primary bg-white">
+                <div class="rounded-full p-2 bg-primary border-0"></div>
+              </button>
+              <button class="rounded-full p-2 border border-primary bg-white">
+                <div class="rounded-full p-2"></div>
+              </button>
+              <button class="rounded-full p-2 border border-primary bg-white">
+                <div class="rounded-full p-2"></div>
+              </button>
+              <button class="rounded-full p-2 border border-primary bg-white">
+                <div class="rounded-full p-2"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gradient-primary-0 p-12 flex gap-4 justify-between">
+        <div class="flex-basis-3">
+          <div class="flex justify-between items-center">
+            <h1 class="text-white text-md">Latest News</h1>
+            <span class="text-accent text-sm">See All</span>
+          </div>
+          <div class="flex gap-4 py-6 flex-wrap h-full">
+            <div class="flex gap-4">
+              <div
+                class="flex gap-4 flex-1 items-center bg-light p-4 rounded-md"
+              >
+                <div class="rounded-md">
+                  <img src="/assets/images/nfram-1.png" />
+                </div>
+                <div class="flex flex-col gap-2 w-full">
+                  <div class="flex justify-between">
+                    <span class="text-xs text-light font-light">
+                      Tuesday, Jun 5, 12 AM - 1:00 PM</span
+                    >
+                    <span class="text-xs text-accent">Category</span>
+                  </div>
+                  <h6 class="text-white text-sm font-normal">
+                    News title goes here, 2 rows max like this
+                  </h6>
+                  <p class="text-white text-xs font-light">
+                    Aut magni rem quia aliquam molestiae. Impedit tor mealdi
+                    consequatur eaque facere iure rerum nes...
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex gap-4 flex-1 items-center bg-light p-4 rounded-md"
+              >
+                <div class="rounded-md">
+                  <img src="/assets/images/nfram-2.png" />
+                </div>
+                <div class="flex flex-col gap-2 w-full">
+                  <div class="flex justify-between">
+                    <span class="text-xs text-light font-light">
+                      Tuesday, Jun 5, 12 AM - 1:00 PM</span
+                    >
+                    <span class="text-xs text-accent">Category</span>
+                  </div>
+                  <h6 class="text-white text-sm font-normal">
+                    News title goes here, 2 rows max like this
+                  </h6>
+                  <p class="text-white text-xs font-light">
+                    Aut magni rem quia aliquam molestiae. Impedit tor mealdi
+                    consequatur eaque facere iure rerum nes...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div
+                class="flex gap-4 flex-1 items-center bg-light p-4 rounded-md"
+              >
+                <div class="rounded-md">
+                  <img src="/assets/images/nfram-3.png" />
+                </div>
+                <div class="flex flex-col gap-2 w-full">
+                  <div class="flex justify-between">
+                    <span class="text-xs text-light font-light">
+                      Tuesday, Jun 5, 12 AM - 1:00 PM</span
+                    >
+                    <span class="text-xs text-accent">Category</span>
+                  </div>
+                  <h6 class="text-white text-sm font-normal">
+                    News title goes here, 2 rows max like this
+                  </h6>
+                  <p class="text-white text-xs font-light">
+                    Aut magni rem quia aliquam molestiae. Impedit tor mealdi
+                    consequatur eaque facere iure rerum nes...
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex gap-4 flex-1 items-center bg-light p-4 rounded-md"
+              >
+                <div class="rounded-md">
+                  <img src="/assets/images/nfram-4.png" />
+                </div>
+                <div class="flex flex-col gap-2 w-full">
+                  <div class="flex justify-between">
+                    <span class="text-xs text-light font-light">
+                      Tuesday, Jun 5, 12 AM - 1:00 PM</span
+                    >
+                    <span class="text-xs text-accent">Category</span>
+                  </div>
+                  <h6 class="text-white text-sm font-normal">
+                    News title goes here, 2 rows max like this
+                  </h6>
+                  <p class="text-white text-xs font-light">
+                    Aut magni rem quia aliquam molestiae. Impedit tor mealdi
+                    consequatur eaque facere iure rerum nes...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div
+                class="flex gap-4 flex-1 items-center bg-light p-4 rounded-md"
+              >
+                <div class="rounded-md">
+                  <img src="/assets/images/nfram-5.png" />
+                </div>
+                <div class="flex flex-col gap-2 w-full">
+                  <div class="flex justify-between">
+                    <span class="text-xs text-light font-light">
+                      Tuesday, Jun 5, 12 AM - 1:00 PM</span
+                    >
+                    <span class="text-xs text-accent">Category</span>
+                  </div>
+                  <h6 class="text-white text-sm font-normal">
+                    News title goes here, 2 rows max like this
+                  </h6>
+                  <p class="text-white text-xs font-light">
+                    Aut magni rem quia aliquam molestiae. Impedit tor mealdi
+                    consequatur eaque facere iure rerum nes...
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex gap-4 flex-1 items-center bg-light p-4 rounded-md"
+              >
+                <div class="rounded-md">
+                  <img src="/assets/images/nfram-6.png" />
+                </div>
+                <div class="flex flex-col gap-2 w-full">
+                  <div class="flex justify-between">
+                    <span class="text-xs text-light font-light">
+                      Tuesday, Jun 5, 12 AM - 1:00 PM</span
+                    >
+                    <span class="text-xs text-accent">Category</span>
+                  </div>
+                  <h6 class="text-white text-sm font-normal">
+                    News title goes here, 2 rows max like this
+                  </h6>
+                  <p class="text-white text-xs font-light">
+                    Aut magni rem quia aliquam molestiae. Impedit tor mealdi
+                    consequatur eaque facere iure rerum nes...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-basis-1 flex flex-col gap-4 h-full">
+          <div>
+            <h1 class="text-white text-md">Social Corner</h1>
+          </div>
+          <div class="py-2 flex flex-col gap-4 justify-between">
+            <div
+              class="rounded-md border border-accent p-4 flex justify-center items-center flex-col gap-4"
+            >
+              <h4 class="text-accent text-md">Praise</h4>
+              <img src="/assets/images/sc-1.png" />
+              <h5 class="text-accent text-sm">Employee Name</h5>
+              <p class="text-light text-center">
+                Aut magni rem quia aliquam molestiae. Impedit consequatur eaque
+                facere iure rerum nes ciunt voluptatem et.
+              </p>
+              <span class="text-accent">employee@ejada.com</span>
+            </div>
+            <div
+              class="rounded-md border border-lightblue p-4 flex justify-center items-center flex-col gap-4"
+            >
+              <h4 class="text-lightblue text-md">Condolences</h4>
+              <img src="/assets/images/sc-2.png" />
+              <h5 class="text-lightblue text-sm">Employee Name</h5>
+              <p class="text-light text-center">
+                Aut magni rem quia aliquam molestiae. Impedit consequatur eaque
+                facere iure rerum nes ciunt voluptatem et.
+              </p>
+              <span class="text-lightblue">employee@ejada.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex-basis-1 flex flex-col gap-4">
+          <div>
+            <h1 class="text-white text-md">Calendar</h1>
+          </div>
+          <div class="bg-white p-4 rounded-md h-full">
+            <div>
+              <div>
+                <h3 class="text-primary-dark text-md">March</h3>
+              </div>
+              <div class="flex justify-between py-6 px-4">
+                <span>M</span>
+                <span>T</span>
+                <span>W</span>
+                <span>T</span>
+                <span>F</span>
+                <span>S</span>
+                <span>S</span>
+              </div>
+              <div class="flex justify-between flex-col flex-wrap gap-8 px-4">
+                <div class="flex justify-between items-center">
+                  <span class="text-primary-dark">01</span>
+                  <span class="text-white bg-primary rounded-full p-2">02</span>
+                  <span class="text-primary-dark">03</span>
+                  <span class="text-primary-dark">04</span>
+                  <span class="text-primary-dark">05</span>
+                  <span class="text-primary-dark">06</span>
+                  <span class="text-primary-dark">07</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-primary-dark">08</span>
+                  <span class="text-primary-dark">09</span>
+                  <span class="text-primary-dark">10</span>
+                  <span class="text-primary-dark">11</span>
+                  <span class="text-primary-dark">12</span>
+                  <span class="text-primary-dark">13</span>
+                  <span class="text-primary-dark">14</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-primary-dark">15</span>
+                  <span class="text-primary-dark">16</span>
+                  <span class="text-primary-dark">17</span>
+                  <span class="text-primary-dark">18</span>
+                  <span class="text-primary-dark">19</span>
+                  <span class="text-primary-dark">20</span>
+                  <span class="text-primary-dark">21</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-primary-dark">22</span>
+                  <span class="text-primary-dark">23</span>
+                  <span class="text-primary-dark">24</span>
+                  <span class="text-primary-dark">25</span>
+                  <span class="text-primary-dark">26</span>
+                  <span class="text-primary-dark">27</span>
+                  <span class="text-primary-dark">28</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-primary-dark">29</span>
+                  <span class="text-primary-dark">30</span>
+                  <span class="text-primary-dark">31</span>
+                  <span class="text-gray">01</span>
+                  <span class="text-gray">02</span>
+                  <span class="text-gray">03</span>
+                  <span class="text-gray">04</span>
+                </div>
+              </div>
+              <div class="py-3">
+                <h3 class="text-md text-primary-dark font-normal">Today</h3>
+                <ul class="flex flex-col gap-4 py-3">
+                  <li class="flex gap-2 items-center font-semibold text-gray">
+                    <div class="rounded-full bg-primary w-3 h-3"></div>
+                    Daily Standup
+                  </li>
+                  <li class="flex gap-2 items-center font-semibold text-gray">
+                    <div class="rounded-full bg-primary w-3 h-3"></div>
+                    Web Progress Update
+                  </li>
+                  <li class="flex gap-2 items-center font-semibold text-gray">
+                    <div class="rounded-full bg-primary w-3 h-3"></div>
+                    Project Briefing
+                  </li>
+                </ul>
+              </div>
+              <div class="py-3">
+                <h3 class="text-md text-primary-dark font-normal">Tomorrow</h3>
+                <ul class="flex flex-col gap-4 py-3">
+                  <li class="flex gap-2 items-center font-semibold text-gray">
+                    <div class="rounded-full bg-primary w-3 h-3"></div>
+                    Daily Standup
+                  </li>
+                  <li class="flex gap-2 items-center font-semibold text-gray">
+                    <div class="rounded-full bg-primary w-3 h-3"></div>
+                    Developer Progress
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-md text-primary-dark font-normal">Holidays</h3>
+                <ul class="flex flex-col gap-4 py-3">
+                  <li class="flex gap-2 items-center font-semibold text-gray">
+                    <div class="rounded-full bg-primary w-3 h-3"></div>
+                    Eid Alfitr
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-12">
+        <h1 class="text-xl text-primary-dark font-semibold">
+          We Are Here To Help
+        </h1>
+        <div class="flex gap-12">
+          <div class="flex flex-col flex-basis-2 gap-2">
+            <h3 class="text-primary text-md font-medium py-6">
+              Response teams
+            </h3>
+            <div>
+              <div class="flex gap-4">
+                <div
+                  class="shadow py-4 px-6 flex flex-col gap-4 rounded-md flex-1"
+                >
+                  <div class="w-full flex justify-center">
+                    <div
+                      class="rounded-full w-24 h-24 bg-primary flex justify-center items-center"
+                    >
+                      <span class="text-accent text-md">HR</span>
+                    </div>
+                  </div>
+                  <h2 class="text-sm text-primary-dark font-semibold py-3">
+                    HR
+                  </h2>
+                  <div class="flex flex-col">
+                    <span class="text-sm text-primary"
+                      >teamtitle@ejada.com</span
+                    >
+                    <span class="text-sm text-primary-dark"
+                      >See Our Latest Communications ></span
+                    >
+                  </div>
+                  <p class="text-sm text-gray w-full">
+                    Aut magni rem quia aliquam molestiae. Impedit consequatur
+                    eaque facere iure rerum nes ciunt voluptatem et.
+                  </p>
+                </div>
+                <div
+                  class="shadow py-4 px-6 flex flex-col gap-4 rounded-md flex-1"
+                >
+                  <div class="w-full flex justify-center">
+                    <div
+                      class="rounded-full w-24 h-24 bg-primary flex justify-center items-center"
+                    >
+                      <span class="text-accent text-md">SC</span>
+                    </div>
+                  </div>
+                  <h2 class="text-sm text-primary-dark font-semibold py-3">
+                    Security
+                  </h2>
+                  <div class="flex flex-col">
+                    <span class="text-sm text-primary"
+                      >teamtitle@ejada.com</span
+                    >
+                    <span class="text-sm text-primary-dark"
+                      >See Our Latest Communications ></span
+                    >
+                  </div>
+                  <p class="text-sm text-gray w-full">
+                    Aut magni rem quia aliquam molestiae. Impedit consequatur
+                    eaque facere iure rerum nes ciunt voluptatem et.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="flex gap-4">
+                <div
+                  class="shadow py-4 px-6 flex flex-col gap-4 rounded-md flex-1"
+                >
+                  <div class="w-full flex justify-center">
+                    <div
+                      class="rounded-full w-24 h-24 bg-primary flex justify-center items-center"
+                    >
+                      <span class="text-accent text-md">IT</span>
+                    </div>
+                  </div>
+                  <h2 class="text-sm text-primary-dark font-semibold py-3">
+                    IT
+                  </h2>
+                  <div class="flex flex-col">
+                    <span class="text-sm text-primary"
+                      >teamtitle@ejada.com</span
+                    >
+                    <span class="text-sm text-primary-dark"
+                      >See Our Latest Communications ></span
+                    >
+                  </div>
+                  <p class="text-sm text-gray w-full">
+                    Aut magni rem quia aliquam molestiae. Impedit consequatur
+                    eaque facere iure rerum nes ciunt voluptatem et.
+                  </p>
+                </div>
+                <div
+                  class="shadow py-4 px-6 flex flex-col gap-4 rounded-md flex-1"
+                >
+                  <div class="w-full flex justify-center">
+                    <div
+                      class="rounded-full w-24 h-24 bg-primary flex justify-center items-center"
+                    >
+                      <span class="text-accent text-md">CR</span>
+                    </div>
+                  </div>
+                  <h2 class="text-sm text-primary-dark font-semibold py-3">
+                    Crisis Response
+                  </h2>
+                  <div class="flex flex-col">
+                    <span class="text-sm text-primary"
+                      >teamtitle@ejada.com</span
+                    >
+                    <span class="text-sm text-primary-dark"
+                      >See Our Latest Communications ></span
+                    >
+                  </div>
+                  <p class="text-sm text-gray w-full">
+                    Aut magni rem quia aliquam molestiae. Impedit consequatur
+                    eaque facere iure rerum nes ciunt voluptatem et.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-basis-2 flex flex-col gap-8">
+            <div class="flex-1">
+              <h3 class="text-primary text-md font-medium py-6">
+                Additional Resources
+              </h3>
+              <div class="flex flex-col gap-4">
+                <div class="flex gap-4">
+                  <div class="flex gap-4">
+                    <img src="/assets/icons/pulse.svg" />
+                    <div>
+                      <h4 class="text-sm text-primary-dark font-semibold py-3">
+                        Employee & Workplaces
+                      </h4>
+                      <p class="text-sm text-gray w-full">
+                        Aut magni rem quia aliquam molestiae. Impedit
+                        consequatur eaque facere iure rerum nes ciunt voluptatem
+                        et.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <img src="/assets/icons/pulse.svg" />
+                    <div>
+                      <h4 class="text-sm text-primary-dark font-semibold py-3">
+                        Employee & Workplaces
+                      </h4>
+                      <p class="text-sm text-gray w-full">
+                        Aut magni rem quia aliquam molestiae. Impedit
+                        consequatur eaque facere iure rerum nes ciunt voluptatem
+                        et.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="flex gap-4">
+                    <img src="/assets/icons/pulse.svg" />
+                    <div>
+                      <h4 class="text-sm text-primary-dark font-semibold py-3">
+                        Employee & Workplaces
+                      </h4>
+                      <p class="text-sm text-gray w-full">
+                        Aut magni rem quia aliquam molestiae. Impedit
+                        consequatur eaque facere iure rerum nes ciunt voluptatem
+                        et.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <img src="/assets/icons/pulse.svg" />
+                    <div>
+                      <h4 class="text-sm text-primary-dark font-semibold py-3">
+                        Employee & Workplaces
+                      </h4>
+                      <p class="text-sm text-gray w-full">
+                        Aut magni rem quia aliquam molestiae. Impedit
+                        consequatur eaque facere iure rerum nes ciunt voluptatem
+                        et.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="flex gap-4">
+                    <img src="/assets/icons/pulse.svg" />
+                    <div>
+                      <h4 class="text-sm text-primary-dark font-semibold py-3">
+                        Employee & Workplaces
+                      </h4>
+                      <p class="text-sm text-gray w-full">
+                        Aut magni rem quia aliquam molestiae. Impedit
+                        consequatur eaque facere iure rerum nes ciunt voluptatem
+                        et.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <img src="/assets/icons/pulse.svg" />
+                    <div>
+                      <h4 class="text-sm text-primary-dark font-semibold py-3">
+                        Employee & Workplaces
+                      </h4>
+                      <p class="text-sm text-gray w-full">
+                        Aut magni rem quia aliquam molestiae. Impedit
+                        consequatur eaque facere iure rerum nes ciunt voluptatem
+                        et.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1 flex gap-4 py-6 items-end">
+              <div class="rounded-md overflow-hidden bg-white shadow">
+                <img src="/assets/images/vid-1.png" />
+                <div class="px-4 py-6">
+                  <span>Video title goes here, 2 rows max here</span>
+                </div>
+              </div>
+              <div class="rounded-md overflow-hidden bg-white shadow">
+                <img src="/assets/images/vid-2.png" />
+                <div class="px-4 py-6">
+                  <span>Video title goes here, 2 rows max here</span>
+                </div>
+              </div>
+              <div class="rounded-md overflow-hidden bg-white shadow">
+                <img src="/assets/images/vid-3.png" />
+                <div class="px-4 py-6">
+                  <span>Video title goes here, 2 rows max here</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="brand">
+        <img src="/assets/logos/logo-white.svg" alt="Ejada's white logo" />
+        <p class="text-sm font-light">
+          © Copyright 2024, Ejada Workspace Portal. All rights Reserved.
+        </p>
+      </div>
+      <div class="links-container">
+        <div class="links">
+          <h3 class="text-md font-medium text-accent">Workspace</h3>
+          <ul>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="links">
+          <h3 class="text-md font-medium text-accent">Resources</h3>
+          <ul>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="links">
+          <h3 class="text-md font-medium text-accent">Departments</h3>
+          <ul>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="index.js"></script>
   </body>

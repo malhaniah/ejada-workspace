@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap");
+@import url("./global.css");
 
 :root {
   /* Used for Main elements / CTA / Icons / Emphasized texts / Headings */
   --ejada-primary: #001081;
   --ejada-secondary: #c5cfda;
   --ejada-accent: #1fed93;
+  --light-blue: #8ae2fe;
 
   /* Used for Cards/ Containers / outlined buttons hover*/
   --ejada-primary-bg: #f2f4ff;
@@ -67,7 +69,9 @@
   --rounded-full: 100px;
   /* --- Gradients --- */
   --primary-gradient: linear-gradient(45deg, #000c5e 50%, #0000ff 100%);
+  --primary-gradient-reverse: linear-gradient(180deg, #0000ff 0%, #000c5e 100%);
   --secondary-gradient: linear-gradient(90deg, #5c2684 0%, #05133f 100%);
+  --variant-gradient: linear-gradient(0deg, #dde1e6 0%, #dde1e6 100%);
 
   /* --- Shadows --- */
   --shadow: 0px 1px 1px 0px rgba(64, 64, 66, 0.08),
@@ -90,6 +94,10 @@ body {
 
 main {
   padding: 30px 0;
+}
+
+ul{
+  list-style: none;
 }
 
 /* General Styles */
@@ -125,26 +133,6 @@ main {
   font-size: var(--body-sm);
 }
 
-.text-bold {
-  font-weight: var(--bold);
-}
-
-.text-semi-bold {
-  font-weight: var(--semi-bold);
-}
-
-.text-medium {
-  font-weight: var(--medium);
-}
-
-.text-regular {
-  font-weight: var(--regular);
-}
-
-.text-thin {
-  font-weight: var(--thin);
-}
-
 .text-white {
   color: white;
 }
@@ -165,12 +153,28 @@ main {
   color: var(--ejada-accent);
 }
 
-.shadow {
-  box-shadow: var(--shadow);
+.text-gray {
+  color: var(--text-natural-gray);
 }
 
-.rounded-full {
-  border-radius: var(--rounded-full) !important;
+.text-light {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.text-lightblue {
+  color: var(--light-blue);
+}
+
+.bg-lightblue {
+  background: var(--light-blue);
+}
+
+.border-lightblue {
+  border-color: var(--light-blue);
+}
+
+.shadow {
+  box-shadow: var(--shadow);
 }
 
 .uppercase {
@@ -197,8 +201,16 @@ main {
   background: var(--primary-gradient);
 }
 
+.gradient-primary-0 {
+  background: var(--primary-gradient-reverse);
+}
+
 .gradient-secondary {
   background: var(--secondary-gradient);
+}
+
+.gradient-variant {
+  background: var(--variant-gradient);
 }
 
 .search-component {
@@ -207,8 +219,6 @@ main {
   align-items: center;
   gap: 1rem;
   background: white;
-  padding: 0.5rem 1rem;
-  border-radius: var(--rounded);
 }
 
 .search-component img {
@@ -232,7 +242,6 @@ main {
 .outlined-btn {
   cursor: pointer;
   padding: 10px 20px;
-  border-radius: var(--rounded-lg);
   transition: all 200ms ease;
   display: flex;
   align-items: center;
@@ -262,9 +271,8 @@ main {
 }
 
 .outlined-btn.white {
-  border: 2px solid white;
+  border-color: white;
   color: white;
-  background: transparent;
 }
 
 .outlined-btn.white:hover {
@@ -272,14 +280,31 @@ main {
   color: var(--ejada-primary);
 }
 
+.outlined-btn.accent {
+  border-color: var(--ejada-accent);
+  color: white;
+}
+
+.outlined-btn.accent:hover {
+  background: var(--ejada-accent);
+  color: white;
+}
+
 .circle-xs {
   width: 20px;
   height: 20px;
-  border-radius: var(--rounded-full);
 }
 
 .bg-accent {
   background: var(--ejada-accent);
+}
+
+.bg-primary {
+  background: var(--ejada-primary);
+}
+
+.bg-light {
+  background: rgba(232, 244, 237, 0.2);
 }
 
 .image-container {
@@ -299,6 +324,13 @@ main {
   object-fit: contain; /* Ensure the image covers the container, cropping if necessary */
   display: block; /* Remove default inline spacing */
 }
+
+.quote {
+  border-left: 5px solid var(--ejada-accent);
+  padding-left: 16px;
+}
+
+/* Add more ml- classes as needed */
 
 /* ---- End Of General Styles ---- */
 
@@ -395,14 +427,19 @@ nav {
 
 /* For later use */
 
-.nav-list .nav-item.active::after{
+.nav-list .nav-item::after {
   content: "";
   position: absolute;
   bottom: -10px;
   left: 0;
-  width: 100%;
+  width: 0%;
   height: 2px;
   background: var(--ejada-primary);
+  transition: all 200ms ease;
+}
+
+.nav-list .nav-item.active::after {
+  width: 100%;
 }
 
 .nav-list .nav-link {
@@ -425,25 +462,19 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 120px 140px;
+  padding: 120px 95px;
   gap: 10rem;
-}
-
-.hero:has(.outlined-btn) .outlined-btn,
-.hero:has(.filled-btn) .filled-btn {
-  margin-top: 96px;
 }
 
 .hero {
   flex: 1;
-  aspect-ratio: 16 / 9;
 }
 
-.hero img {
+/* .hero img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-}
+} */
 
 /* ------ End Of Header ------ */
 
@@ -534,7 +565,6 @@ nav {
   background: var(--ejada-primary-bg);
   color: var(--text-primary);
   padding-left: 25px;
-  border-radius: var(--rounded);
 }
 
 .partners {
