@@ -71,6 +71,7 @@
   --primary-gradient: linear-gradient(45deg, #000c5e 50%, #0000ff 100%);
   --primary-gradient-reverse: linear-gradient(180deg, #0000ff 0%, #000c5e 100%);
   --secondary-gradient: linear-gradient(90deg, #5c2684 0%, #05133f 100%);
+  --secondary-gradient-reverse: linear-gradient(12deg, #05133f 0%, #5c2684 100%);
   --variant-gradient: linear-gradient(0deg, #dde1e6 0%, #dde1e6 100%);
 
   /* --- Shadows --- */
@@ -207,6 +208,10 @@ ul{
 
 .gradient-secondary {
   background: var(--secondary-gradient);
+}
+
+.gradient-secondary-0 {
+  background: var(--secondary-gradient-reverse);
 }
 
 .gradient-variant {
