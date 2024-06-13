@@ -312,6 +312,10 @@ ul{
   background: rgba(232, 244, 237, 0.2);
 }
 
+.bg-off {
+  background: #F3F5F8;
+}
+
 .image-container {
   flex: 1; /* Allow the container to grow and shrink */
   max-width: 100%; /* Ensure the container doesn't exceed the viewport width */
