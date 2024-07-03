@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejada Workspace</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="sharepoint">
+        <!-- Left Controls Component -->
+        <div class="component">
+          <div class="waffle">
+            <div class="sub-waffle">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="sub-waffle">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="sub-waffle">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+          <img src="/assets/logos/logo-white-minimal.svg" alt="minimal logo" />
+          <h3 class="text-sm text-white font-semibold">SharePoint</h3>
+        </div>
+        <!-- Search Component -->
+        <div class="component justify-center">
+          <div class="search-component p-2 px-3 rounded-md">
+            <img src="/assets/icons/search.svg" />
+            <input type="text" placeholder="Search this site" />
+          </div>
+        </div>
+        <!-- Right Controls Component -->
+        <div class="component justify-end">
+          <div class="sub-component">
+            <img src="/assets/icons/megaphone.svg" />
+          </div>
+          <div class="sub-component">
+            <img src="/assets/icons/settings.svg" />
+          </div>
+          <div class="sub-component">
+            <img src="/assets/icons/question.svg" />
+          </div>
+          <div class="sub-component">
+            <img src="/assets/images/persona.svg" />
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="logo">
+          <img src="/assets/logos/logo-default.svg" />
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              Workspace
+              <img src="/assets/icons/arrow.svg" />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              Employee Services
+              <img src="/assets/icons/arrow.svg" />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              Departments
+              <img src="/assets/icons/arrow.svg" />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              Resources
+              <img src="/assets/icons/arrow.svg" />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              Knowledge
+              <img src="/assets/icons/arrow.svg" />
+            </a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">News</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+        </ul>
+        <div class="greetings">
+          <h3 class="text-sm font-normal text-primary-dark">
+            Welcome Back!, Mohammed.
+          </h3>
+        </div>
+      </nav>
+      <div class="hero-container gradient-primary relative overflow-hidden">
+        <div class="px-6 flex flex-col gap-6">
+          <h5 class="text-md text-accent font-medium flex gap-4 items-center">
+            <img src="/assets/icons/octicon-law-24.svg" />Legal Department
+          </h5>
+          <h2 class="py-4 text-2xl font-semibold text-white">Documents</h2>
+          <p class="text-white w-3-2 font-light">
+            Short description goes here in two rows maximum
+          </p>
+        </div>
+      </div>
+    </header>
+    <main class="p-24">
+      <div class="w-full">
+        <div class="flex flex-col gap-6">
+          <h3 class="text-md font-semibold text-primary-dark">Documents</h3>
+          <div class="flex gap-2 items-center justify-between">
+            <div class="flex gap-4">
+              <div
+                class="p-2 px-3 flex items-center gap-2 rounded-md border border-gray-300"
+              >
+                <img src="/assets/icons/search.svg" />
+                <input
+                  type="text"
+                  placeholder="Search this site"
+                  class="border-0"
+                />
+              </div>
+              <button class="outlined-btn rounded-lg">
+                <img src="/assets/icons/action-filter.svg" />
+                Filters
+              </button>
+            </div>
+            <div class="flex gap-4">
+              <button class="outlined-btn rounded-md">
+                <img src="/assets/icons/action-export.svg" />Export
+              </button>
+              <button class="filled-btn rounded-md">
+                <img src="/assets/icons/action-add.svg" />New Documents
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border border-gray-100 rounded-lg overflow-hidden my-6">
+        <div class="p-2">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="w-10">
+                  <label class="checkbox-container">
+                    <input type="checkbox" />
+                    <span class="custom-checkbox">
+                      <svg viewBox="0 0 24 24">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                    </span>
+                  </label>
+                </th>
+                <th>Document Name</th>
+                <th>Document Name</th>
+                <th>Version #</th>
+                <th>Secondary Party</th>
+                <th>Signed Date</th>
+                <th>Completion Date</th>
+                <th>Document Type</th>
+                <th>Related Document</th>
+                <th>Release Year</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <label class="checkbox-container">
+                    <input type="checkbox" />
+                    <span class="custom-checkbox">
+                      <svg viewBox="0 0 24 24">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                    </span>
+                  </label>
+                </td>
+                <td class="text-primary">URL NAME HERE</td>
+                <td class="flex items-center justify-start">
+                  <img src="/assets/icons/unloaded-file.svg" /> Filename
+                </td>
+                <td>1</td>
+                <td>Property Name</td>
+                <td>17/02/2021</td>
+                <td>17/02/2021</td>
+                <td>NDA</td>
+                <td>1</td>
+                <td>2023</td>
+                <td>
+                  <div
+                    class="rounded-md border border-accent py-1 px-2 text-accent flex items-center gap-1 w-fit text-xs"
+                  >
+                    <div class="rounded-full bg-accent w-2 h-2"></div>
+                    Started
+                  </div>
+                </td>
+                <td><img src="/assets/icons/interface-more.svg" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="checkbox-container">
+                    <input type="checkbox" />
+                    <span class="custom-checkbox">
+                      <svg viewBox="0 0 24 24">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                    </span>
+                  </label>
+                </td>
+                <td class="text-primary">URL NAME HERE</td>
+                <td class="flex items-center justify-start">
+                  <img src="/assets/icons/unloaded-file.svg" /> Filename
+                </td>
+                <td>1</td>
+                <td>Property Name</td>
+                <td>17/02/2021</td>
+                <td>17/02/2021</td>
+                <td>NDA</td>
+                <td>1</td>
+                <td>2023</td>
+                <td>
+                  <div
+                    class="rounded-md border border-accent py-1 px-2 text-accent flex items-center gap-2 w-fit text-xs"
+                  >
+                    <div class="rounded-full bg-accent w-2 h-2"></div>
+                    Started
+                  </div>
+                </td>
+                <td><img src="/assets/icons/interface-more.svg" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="checkbox-container">
+                    <input type="checkbox" />
+                    <span class="custom-checkbox">
+                      <svg viewBox="0 0 24 24">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                    </span>
+                  </label>
+                </td>
+                <td class="text-primary">URL NAME HERE</td>
+                <td class="flex items-center justify-start">
+                  <img src="/assets/icons/unloaded-file.svg" /> Filename
+                </td>
+                <td>1</td>
+                <td>Property Name</td>
+                <td>17/02/2021</td>
+                <td>17/02/2021</td>
+                <td>NDA</td>
+                <td>1</td>
+                <td>2023</td>
+                <td>
+                  <div
+                    class="rounded-md border border-accent py-1 px-2 text-accent flex items-center gap-2 w-fit text-xs"
+                  >
+                    <div class="rounded-full bg-accent w-2 h-2"></div>
+                    Started
+                  </div>
+                </td>
+                <td><img src="/assets/icons/interface-more.svg" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="checkbox-container">
+                    <input type="checkbox" />
+                    <span class="custom-checkbox">
+                      <svg viewBox="0 0 24 24">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                    </span>
+                  </label>
+                </td>
+                <td class="text-primary">URL NAME HERE</td>
+                <td class="flex items-center justify-start">
+                  <img src="/assets/icons/unloaded-file.svg" /> Filename
+                </td>
+                <td>1</td>
+                <td>Property Name</td>
+                <td>17/02/2023</td>
+                <td>17/02/2023</td>
+                <td>NDA</td>
+                <td>1</td>
+                <td>2024</td>
+                <td>
+                  <div
+                    class="rounded-md border border-gray-300 py-1 px-2 text-gray flex items-center gap-1 w-fit text-xs"
+                  >
+                    <div class="rounded-full bg-gray w-2 h-2"></div>
+                    Not Started
+                  </div>
+                </td>
+                <td><img src="/assets/icons/interface-more.svg" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="checkbox-container">
+                    <input type="checkbox" />
+                    <span class="custom-checkbox">
+                      <svg viewBox="0 0 24 24">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                    </span>
+                  </label>
+                </td>
+                <td class="text-primary">URL NAME HERE</td>
+                <td class="flex items-center justify-start">
+                  <img src="/assets/icons/unloaded-file.svg" /> Filename
+                </td>
+                <td>1</td>
+                <td>Property Name</td>
+                <td>17/02/2021</td>
+                <td>17/02/2021</td>
+                <td>NDA</td>
+                <td>1</td>
+                <td>2023</td>
+                <td>
+                  <div
+                    class="rounded-md border border-accent py-1 px-2 text-accent flex items-center gap-2 w-fit text-xs"
+                  >
+                    <div class="rounded-full bg-accent w-2 h-2"></div>
+                    Started
+                  </div>
+                </td>
+                <td><img src="/assets/icons/interface-more.svg" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="checkbox-container">
+                    <input type="checkbox" />
+                    <span class="custom-checkbox">
+                      <svg viewBox="0 0 24 24">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                    </span>
+                  </label>
+                </td>
+                <td class="text-primary">URL NAME HERE</td>
+                <td class="flex items-center justify-start">
+                  <img src="/assets/icons/unloaded-file.svg" /> Filename
+                </td>
+                <td>1</td>
+                <td>Property Name</td>
+                <td>17/02/2021</td>
+                <td>17/02/2021</td>
+                <td>NDA</td>
+                <td>1</td>
+                <td>2023</td>
+                <td>
+                  <div
+                    class="rounded-md border border-accent py-1 px-2 text-accent flex items-center gap-2 w-fit text-xs"
+                  >
+                    <div class="rounded-full bg-accent w-2 h-2"></div>
+                    Started
+                  </div>
+                </td>
+                <td><img src="/assets/icons/interface-more.svg" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="checkbox-container">
+                    <input type="checkbox" />
+                    <span class="custom-checkbox">
+                      <svg viewBox="0 0 24 24">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                    </span>
+                  </label>
+                </td>
+                <td class="text-primary">URL NAME HERE</td>
+                <td class="flex items-center justify-start">
+                  <img src="/assets/icons/unloaded-file.svg" /> Filename
+                </td>
+                <td>1</td>
+                <td>Property Name</td>
+                <td>17/02/2023</td>
+                <td>17/02/2023</td>
+                <td>NDA</td>
+                <td>1</td>
+                <td>2024</td>
+                <td>
+                  <div
+                    class="rounded-md border border-gray-300 py-1 px-2 text-gray flex items-center gap-1 w-fit text-xs"
+                  >
+                    <div class="rounded-full bg-gray w-2 h-2"></div>
+                    Not Started
+                  </div>
+                </td>
+                <td><img src="/assets/icons/interface-more.svg" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="checkbox-container">
+                    <input type="checkbox" />
+                    <span class="custom-checkbox">
+                      <svg viewBox="0 0 24 24">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                    </span>
+                  </label>
+                </td>
+                <td class="text-primary">URL NAME HERE</td>
+                <td class="flex items-center justify-start">
+                  <img src="/assets/icons/unloaded-file.svg" /> Filename
+                </td>
+                <td>1</td>
+                <td>Property Name</td>
+                <td>17/02/2021</td>
+                <td>17/02/2021</td>
+                <td>NDA</td>
+                <td>1</td>
+                <td>2023</td>
+                <td>
+                  <div
+                    class="rounded-md border border-accent py-1 px-2 text-accent flex items-center gap-2 w-fit text-xs"
+                  >
+                    <div class="rounded-full bg-accent w-2 h-2"></div>
+                    Started
+                  </div>
+                </td>
+                <td><img src="/assets/icons/interface-more.svg" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="checkbox-container">
+                    <input type="checkbox" />
+                    <span class="custom-checkbox">
+                      <svg viewBox="0 0 24 24">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                    </span>
+                  </label>
+                </td>
+                <td class="text-primary">URL NAME HERE</td>
+                <td class="flex items-center justify-start">
+                  <img src="/assets/icons/unloaded-file.svg" /> Filename
+                </td>
+                <td>1</td>
+                <td>Property Name</td>
+                <td>17/02/2021</td>
+                <td>17/02/2021</td>
+                <td>NDA</td>
+                <td>1</td>
+                <td>2023</td>
+                <td>
+                  <div
+                    class="rounded-md border border-accent py-1 px-2 text-accent flex items-center gap-2 w-fit text-xs"
+                  >
+                    <div class="rounded-full bg-accent w-2 h-2"></div>
+                    Started
+                  </div>
+                </td>
+                <td><img src="/assets/icons/interface-more.svg" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="checkbox-container">
+                    <input type="checkbox" />
+                    <span class="custom-checkbox">
+                      <svg viewBox="0 0 24 24">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                    </span>
+                  </label>
+                </td>
+                <td class="text-primary">URL NAME HERE</td>
+                <td class="flex items-center justify-start">
+                  <img src="/assets/icons/unloaded-file.svg" /> Filename
+                </td>
+                <td>1</td>
+                <td>Property Name</td>
+                <td>17/02/2021</td>
+                <td>17/02/2021</td>
+                <td>NDA</td>
+                <td>1</td>
+                <td>2023</td>
+                <td>
+                  <div
+                    class="rounded-md border border-accent py-1 px-2 text-accent flex items-center gap-2 w-fit text-xs"
+                  >
+                    <div class="rounded-full bg-accent w-2 h-2"></div>
+                    Started
+                  </div>
+                </td>
+                <td><img src="/assets/icons/interface-more.svg" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div
+          class="border-t border-t-gray-100 p-4 flex justify-between items-center"
+        >
+          <div>
+            <p class="text-xs font-normal flex gap-3 items-center">
+              Display
+              <select class="border border-gray-100 rounded-lg py-1 px-2">
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+              </select>
+              12 results out of 250
+            </p>
+          </div>
+          <div class="flex gap-4 items-center">
+            <div>
+              <p class="text-xs font-normal">Page 1 of 5</p>
+            </div>
+            <div class="flex gap-2">
+              <button
+                class="rounded-lg w-8 h-8 border border-gray-100 bg-light flex items-center justify-center"
+              >
+                <img src="/assets/icons/disabled-arrow.svg" />
+              </button>
+              <button
+                class="rounded-lg w-8 h-8 border border-gray-100 bg-light flex items-center justify-center"
+              >
+                <img src="/assets/icons/single-disabled-arrow.svg" />
+              </button>
+              <button
+                class="rounded-lg w-8 h-8 border-0 bg-primary text-white flex items-center justify-center"
+              >
+                1
+              </button>
+              <button
+                class="rounded-lg w-8 h-8 border border-gray-100 bg-white text-primary-dark flex items-center justify-center"
+              >
+                2
+              </button>
+              <button
+                class="rounded-lg w-8 h-8 border border-gray-100 bg-white text-primary-dark flex items-center justify-center"
+              >
+                3
+              </button>
+              <button
+                class="rounded-lg w-8 h-8 border border-gray-100 bg-white text-primary-dark flex items-center justify-center"
+              >
+                ...
+              </button>
+              <button
+                class="rounded-lg w-8 h-8 border border-gray-100 bg-white text-primary-dark flex items-center justify-center"
+              >
+                20
+              </button>
+              <button
+                class="rounded-lg w-8 h-8 border border-gray-100 bg-white flex items-center justify-center"
+              >
+                <img src="/assets/icons/single-arrow.svg" />
+              </button>
+              <button
+                class="rounded-lg w-8 h-8 border border-gray-100 bg-white flex items-center justify-center"
+              >
+                <img src="/assets/icons/double-arrow.svg" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="brand">
+        <img src="/assets/logos/logo-white.svg" alt="Ejada's white logo" />
+        <p class="text-sm font-light">
+          © Copyright 2024, Ejada Workspace Portal. All rights Reserved.
+        </p>
+      </div>
+      <div class="links-container">
+        <div class="links">
+          <h3 class="text-md font-medium text-accent">Workspace</h3>
+          <ul>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="links">
+          <h3 class="text-md font-medium text-accent">Resources</h3>
+          <ul>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="links">
+          <h3 class="text-md font-medium text-accent">Departments</h3>
+          <ul>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+            <li>
+              <a href="#" class="decoration-none font-light text-sm"
+                >Item Title Here</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>

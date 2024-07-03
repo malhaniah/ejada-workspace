@@ -67,3 +67,11 @@
     });
   });
 })();
+
+function toggleCheckbox() {
+  $(".checkbox-container input").click(function () {
+    $(this).parent().toggleClass("checked");
+  });
+}
+
+toggleCheckbox();
