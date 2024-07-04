@@ -84,6 +84,11 @@
 
   /* Borders */
   --border-neutral: #a3a3a8;
+
+  --checkbox-bg: #ffffff;
+  --checkbox-border: var(--ejada-secondary);
+  --checkbox-checked-bg: var(--ejada-primary);
+  --checkbox-checked-border: var(--ejada-primary);
 }
 
 * {
@@ -152,6 +157,10 @@ ul {
 
 .text-primary-dark {
   color: var(--text-primary-dark);
+}
+
+.text-primary-light {
+  color: var(--text-primary-light);
 }
 
 .text-accent {
@@ -322,6 +331,10 @@ ul {
 
 .bg-off {
   background: #f3f5f8;
+}
+
+.bg-transparent{
+  background: transparent;
 }
 
 .image-container {
