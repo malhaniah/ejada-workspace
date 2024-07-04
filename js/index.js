@@ -68,10 +68,26 @@
   });
 })();
 
+/**
+ * This function toggles the checked class of the parent element
+ * when the input within the checkbox-container is clicked.
+ */
 (function toggleCheckbox() {
+  // Attach a click event listener to the input element within the checkbox-container
   $(".checkbox-container input").click(function () {
+    // Use jQuery to select the parent element of the clicked input
+    // and toggle the "checked" class on it
     $(this).parent().toggleClass("checked");
   });
 })();
 
+(function toggleHide() {
+  $("#n-doc").on("click", function () {
+    $(".wrapper").toggle("hide");
+    $(".new-document-wrapper").toggle("show");
+  });
+})();
 
+(function toggleShow() {
+  $(".new-document-wrapper").hide()
+})()

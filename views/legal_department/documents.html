@@ -95,630 +95,804 @@
         </div>
       </nav>
       <div class="hero-container gradient-primary relative overflow-hidden">
-        <div class="px-6 flex flex-col gap-6">
+        <div class="px-6 flex flex-col gap-1">
           <h5 class="text-md text-accent font-medium flex gap-4 items-center">
             <img src="/assets/icons/octicon-law-24.svg" />Legal Department
           </h5>
-          <h2 class="py-4 text-2xl font-semibold text-white">Documents</h2>
-          <p class="text-white w-3-2 font-light">
-            Short description goes here in two rows maximum
-          </p>
+          <div>
+            <h2 class="py-4 text-2xl font-semibold text-white">Documents</h2>
+            <p class="text-white w-3-2 font-light">
+              Short description goes here in two rows maximum
+            </p>
+          </div>
         </div>
       </div>
     </header>
     <main class="p-24">
-      <div class="w-full">
-        <div class="flex flex-col gap-6">
-          <h3 class="text-md font-semibold text-primary-dark">Documents</h3>
-          <div class="flex gap-2 items-center justify-between">
-            <div class="flex gap-4">
+      <div class="wrapper">
+        <div class="w-full">
+          <div class="flex flex-col gap-6">
+            <h3 class="text-md font-semibold text-primary-dark">Documents</h3>
+            <div class="flex gap-2 items-center justify-between">
+              <div class="flex gap-4">
+                <div
+                  class="p-2 px-3 flex items-center gap-2 rounded-md border border-gray-300"
+                >
+                  <img src="/assets/icons/search.svg" />
+                  <input
+                    type="text"
+                    placeholder="Search this site"
+                    class="border-0"
+                  />
+                </div>
+                <button class="outlined-btn rounded-lg">
+                  <img src="/assets/icons/action-filter.svg" />
+                  Filters
+                </button>
+              </div>
+              <div class="flex gap-4">
+                <button class="outlined-btn rounded-md">
+                  <img src="/assets/icons/action-export.svg" />Export
+                </button>
+                <button class="filled-btn rounded-md" id="n-doc">
+                  <img src="/assets/icons/action-add.svg" />New Documents
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="my-6 flex justify-between items-center">
+            <div class="flex gap-4 items-center">
+              <label class="flex flex-col gap-2">
+                Label
+                <select
+                  class="border border-gray-100 rounded-lg w-64 outline-none p-2"
+                >
+                  <option value="selection">selection</option>
+                </select>
+              </label>
+              <label class="flex flex-col gap-2">
+                Label
+                <select
+                  class="border border-gray-100 rounded-lg w-64 outline-none p-2"
+                >
+                  <option value="selection">selection</option>
+                </select>
+              </label>
+              <label class="flex flex-col gap-2">
+                Label
+                <select
+                  class="border border-gray-100 rounded-lg w-64 outline-none p-2"
+                >
+                  <option value="selection">selection</option>
+                </select>
+              </label>
+              <label class="flex flex-col gap-2">
+                Label
+                <select
+                  class="border border-gray-100 rounded-lg w-64 outline-none p-2"
+                >
+                  <option value="selection">selection</option>
+                </select>
+              </label>
+            </div>
+            <button
+              class="border-0 bg-transparent text-primary-dark flex items-center gap-4"
+            >
+              Apply Filters <img src="/assets/icons/pointed-arrow.svg" />
+            </button>
+          </div>
+        </div>
+        <div class="border border-gray-100 rounded-lg overflow-hidden my-6">
+          <div class="p-2">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="w-10">
+                    <label class="checkbox-container">
+                      <input type="checkbox" />
+                      <span class="custom-checkbox">
+                        <svg viewBox="0 0 24 24">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                    </label>
+                  </th>
+                  <th>Document Name</th>
+                  <th>Document Name</th>
+                  <th>Version #</th>
+                  <th>Secondary Party</th>
+                  <th>Signed Date</th>
+                  <th>Completion Date</th>
+                  <th>Document Type</th>
+                  <th>Related Document</th>
+                  <th>Release Year</th>
+                  <th>Status</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <label class="checkbox-container">
+                      <input type="checkbox" />
+                      <span class="custom-checkbox">
+                        <svg viewBox="0 0 24 24">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                    </label>
+                  </td>
+                  <td class="text-primary">URL NAME HERE</td>
+                  <td class="flex items-center justify-start">
+                    <img src="/assets/icons/unloaded-file.svg" /> Filename
+                  </td>
+                  <td>1</td>
+                  <td>Property Name</td>
+                  <td>17/02/2021</td>
+                  <td>17/02/2021</td>
+                  <td>NDA</td>
+                  <td>1</td>
+                  <td>2023</td>
+                  <td>
+                    <div
+                      class="rounded-md border border-accent py-1 px-2 text-accent flex items-center gap-1 w-fit text-xs"
+                    >
+                      <div class="rounded-full bg-accent w-2 h-2"></div>
+                      Started
+                    </div>
+                  </td>
+                  <td class="relative">
+                    <button class="bg-transparent border-0 more-button">
+                      <img src="/assets/icons/interface-more.svg" />
+                    </button>
+                    <div
+                      class="border border-gray-100 absolute bg-white top-0 rounded-lg z-10"
+                      style="left: -240%; top: -50%"
+                    >
+                      <ul class="flex flex-col">
+                        <li
+                          class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          Edit
+                        </li>
+                        <li
+                          class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          Manage
+                        </li>
+                        <li
+                          class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          View Details
+                        </li>
+                        <li
+                          class="py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          Deactivate
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="checkbox-container">
+                      <input type="checkbox" />
+                      <span class="custom-checkbox">
+                        <svg viewBox="0 0 24 24">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                    </label>
+                  </td>
+                  <td class="text-primary">URL NAME HERE</td>
+                  <td class="flex items-center justify-start">
+                    <img src="/assets/icons/unloaded-file.svg" /> Filename
+                  </td>
+                  <td>1</td>
+                  <td>Property Name</td>
+                  <td>17/02/2021</td>
+                  <td>17/02/2021</td>
+                  <td>NDA</td>
+                  <td>1</td>
+                  <td>2023</td>
+                  <td>
+                    <div
+                      class="rounded-md border border-accent py-1 px-2 text-accent flex items-center gap-1 w-fit text-xs"
+                    >
+                      <div class="rounded-full bg-accent w-2 h-2"></div>
+                      Started
+                    </div>
+                  </td>
+                  <td class="relative">
+                    <button class="bg-transparent border-0 more-button">
+                      <img src="/assets/icons/interface-more.svg" />
+                    </button>
+                    <div
+                      class="border border-gray-100 absolute bg-white top-0 rounded-lg z-10"
+                      style="left: -240%; top: -50%"
+                    >
+                      <ul class="flex flex-col">
+                        <li
+                          class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          Edit
+                        </li>
+                        <li
+                          class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          Manage
+                        </li>
+                        <li
+                          class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          View Details
+                        </li>
+                        <li
+                          class="py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          Deactivate
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="checkbox-container">
+                      <input type="checkbox" />
+                      <span class="custom-checkbox">
+                        <svg viewBox="0 0 24 24">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                    </label>
+                  </td>
+                  <td class="text-primary">URL NAME HERE</td>
+                  <td class="flex items-center justify-start">
+                    <img src="/assets/icons/unloaded-file.svg" /> Filename
+                  </td>
+                  <td>1</td>
+                  <td>Property Name</td>
+                  <td>17/02/2021</td>
+                  <td>17/02/2021</td>
+                  <td>NDA</td>
+                  <td>1</td>
+                  <td>2023</td>
+                  <td>
+                    <div
+                      class="rounded-md border border-accent py-1 px-2 text-accent flex items-center gap-1 w-fit text-xs"
+                    >
+                      <div class="rounded-full bg-accent w-2 h-2"></div>
+                      Started
+                    </div>
+                  </td>
+                  <td class="relative">
+                    <button class="bg-transparent border-0 more-button">
+                      <img src="/assets/icons/interface-more.svg" />
+                    </button>
+                    <div
+                      class="border border-gray-100 absolute bg-white top-0 rounded-lg z-10"
+                      style="left: -240%; top: -50%"
+                    >
+                      <ul class="flex flex-col">
+                        <li
+                          class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          Edit
+                        </li>
+                        <li
+                          class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          Manage
+                        </li>
+                        <li
+                          class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          View Details
+                        </li>
+                        <li
+                          class="py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          Deactivate
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="checkbox-container">
+                      <input type="checkbox" />
+                      <span class="custom-checkbox">
+                        <svg viewBox="0 0 24 24">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                    </label>
+                  </td>
+                  <td class="text-primary">URL NAME HERE</td>
+                  <td class="flex items-center justify-start">
+                    <img src="/assets/icons/unloaded-file.svg" /> Filename
+                  </td>
+                  <td>1</td>
+                  <td>Property Name</td>
+                  <td>17/02/2021</td>
+                  <td>17/02/2021</td>
+                  <td>NDA</td>
+                  <td>1</td>
+                  <td>2023</td>
+                  <td>
+                    <div
+                      class="rounded-md border border-accent py-1 px-2 text-accent flex items-center gap-1 w-fit text-xs"
+                    >
+                      <div class="rounded-full bg-accent w-2 h-2"></div>
+                      Started
+                    </div>
+                  </td>
+                  <td class="relative">
+                    <button class="bg-transparent border-0 more-button">
+                      <img src="/assets/icons/interface-more.svg" />
+                    </button>
+                    <div
+                      class="border border-gray-100 absolute bg-white top-0 rounded-lg z-10"
+                      style="left: -240%; top: -50%"
+                    >
+                      <ul class="flex flex-col">
+                        <li
+                          class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          Edit
+                        </li>
+                        <li
+                          class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          Manage
+                        </li>
+                        <li
+                          class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          View Details
+                        </li>
+                        <li
+                          class="py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          Deactivate
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="checkbox-container">
+                      <input type="checkbox" />
+                      <span class="custom-checkbox">
+                        <svg viewBox="0 0 24 24">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                    </label>
+                  </td>
+                  <td class="text-primary">URL NAME HERE</td>
+                  <td class="flex items-center justify-start">
+                    <img src="/assets/icons/unloaded-file.svg" /> Filename
+                  </td>
+                  <td>1</td>
+                  <td>Property Name</td>
+                  <td>17/02/2021</td>
+                  <td>17/02/2021</td>
+                  <td>NDA</td>
+                  <td>1</td>
+                  <td>2024</td>
+                  <td>
+                    <div
+                      class="rounded-md border border-gray-300 py-1 px-2 text-gray flex items-center gap-1 w-fit text-xs"
+                    >
+                      <div class="rounded-full bg-gray w-2 h-2"></div>
+                      Not Started
+                    </div>
+                  </td>
+                  <td class="relative">
+                    <button class="bg-transparent border-0 more-button">
+                      <img src="/assets/icons/interface-more.svg" />
+                    </button>
+                    <div
+                      class="border border-gray-100 absolute bg-white top-0 rounded-lg z-10"
+                      style="left: -240%; top: -50%"
+                    >
+                      <ul class="flex flex-col">
+                        <li
+                          class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          Edit
+                        </li>
+                        <li
+                          class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          Manage
+                        </li>
+                        <li
+                          class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          View Details
+                        </li>
+                        <li
+                          class="py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          Deactivate
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="checkbox-container">
+                      <input type="checkbox" />
+                      <span class="custom-checkbox">
+                        <svg viewBox="0 0 24 24">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                    </label>
+                  </td>
+                  <td class="text-primary">URL NAME HERE</td>
+                  <td class="flex items-center justify-start">
+                    <img src="/assets/icons/unloaded-file.svg" /> Filename
+                  </td>
+                  <td>1</td>
+                  <td>Property Name</td>
+                  <td>17/02/2021</td>
+                  <td>17/02/2021</td>
+                  <td>NDA</td>
+                  <td>1</td>
+                  <td>2023</td>
+                  <td>
+                    <div
+                      class="rounded-md border border-accent py-1 px-2 text-accent flex items-center gap-1 w-fit text-xs"
+                    >
+                      <div class="rounded-full bg-accent w-2 h-2"></div>
+                      Started
+                    </div>
+                  </td>
+                  <td class="relative">
+                    <button class="bg-transparent border-0 more-button">
+                      <img src="/assets/icons/interface-more.svg" />
+                    </button>
+                    <div
+                      class="border border-gray-100 absolute bg-white top-0 rounded-lg z-10"
+                      style="left: -240%; top: -50%"
+                    >
+                      <ul class="flex flex-col">
+                        <li
+                          class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          Edit
+                        </li>
+                        <li
+                          class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          Manage
+                        </li>
+                        <li
+                          class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          View Details
+                        </li>
+                        <li
+                          class="py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          Deactivate
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="checkbox-container">
+                      <input type="checkbox" />
+                      <span class="custom-checkbox">
+                        <svg viewBox="0 0 24 24">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                    </label>
+                  </td>
+                  <td class="text-primary">URL NAME HERE</td>
+                  <td class="flex items-center justify-start">
+                    <img src="/assets/icons/unloaded-file.svg" /> Filename
+                  </td>
+                  <td>1</td>
+                  <td>Property Name</td>
+                  <td>17/02/2021</td>
+                  <td>17/02/2021</td>
+                  <td>NDA</td>
+                  <td>1</td>
+                  <td>2023</td>
+                  <td>
+                    <div
+                      class="rounded-md border border-accent py-1 px-2 text-accent flex items-center gap-1 w-fit text-xs"
+                    >
+                      <div class="rounded-full bg-accent w-2 h-2"></div>
+                      Started
+                    </div>
+                  </td>
+                  <td class="relative">
+                    <button class="bg-transparent border-0 more-button">
+                      <img src="/assets/icons/interface-more.svg" />
+                    </button>
+                    <div
+                      class="border border-gray-100 absolute bg-white top-0 rounded-lg z-10"
+                      style="left: -240%; top: -50%"
+                    >
+                      <ul class="flex flex-col">
+                        <li
+                          class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          Edit
+                        </li>
+                        <li
+                          class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          Manage
+                        </li>
+                        <li
+                          class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          View Details
+                        </li>
+                        <li
+                          class="py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
+                        >
+                          Deactivate
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div
+            class="border-t border-t-gray-100 p-4 flex justify-between items-center"
+          >
+            <div>
+              <p class="text-xs font-normal flex gap-3 items-center">
+                Display
+                <select class="border border-gray-100 rounded-lg py-1 px-2">
+                  <option value="10">10</option>
+                  <option value="25">25</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                </select>
+                12 results out of 250
+              </p>
+            </div>
+            <div class="flex gap-4 items-center">
+              <div>
+                <p class="text-xs font-normal">Page 1 of 5</p>
+              </div>
+              <div class="flex gap-2">
+                <button
+                  class="rounded-lg w-8 h-8 border border-gray-100 bg-light flex items-center justify-center"
+                >
+                  <img src="/assets/icons/disabled-arrow.svg" />
+                </button>
+                <button
+                  class="rounded-lg w-8 h-8 border border-gray-100 bg-light flex items-center justify-center"
+                >
+                  <img src="/assets/icons/single-disabled-arrow.svg" />
+                </button>
+                <button
+                  class="rounded-lg w-8 h-8 border-0 bg-primary text-white flex items-center justify-center"
+                >
+                  1
+                </button>
+                <button
+                  class="rounded-lg w-8 h-8 border border-gray-100 bg-white text-primary-dark flex items-center justify-center"
+                >
+                  2
+                </button>
+                <button
+                  class="rounded-lg w-8 h-8 border border-gray-100 bg-white text-primary-dark flex items-center justify-center"
+                >
+                  3
+                </button>
+                <button
+                  class="rounded-lg w-8 h-8 border border-gray-100 bg-white text-primary-dark flex items-center justify-center"
+                >
+                  ...
+                </button>
+                <button
+                  class="rounded-lg w-8 h-8 border border-gray-100 bg-white text-primary-dark flex items-center justify-center"
+                >
+                  20
+                </button>
+                <button
+                  class="rounded-lg w-8 h-8 border border-gray-100 bg-white flex items-center justify-center"
+                >
+                  <img src="/assets/icons/single-arrow.svg" />
+                </button>
+                <button
+                  class="rounded-lg w-8 h-8 border border-gray-100 bg-white flex items-center justify-center"
+                >
+                  <img src="/assets/icons/double-arrow.svg" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="new-document-wrapper">
+        <div class="w-full">
+          <div class="flex flex-col gap-6">
+            <h3 class="text-md font-semibold text-primary-dark">
+              Documents Name Here
+            </h3>
+            <div class="flex gap-2 items-center justify-between">
+              <div></div>
+              <div class="flex gap-4">
+                <button class="outlined-btn rounded-md">
+                  <img src="/assets/icons/action-export.svg" />Export
+                </button>
+                <button class="filled-btn rounded-md">
+                  <img src="/assets/icons/action-add.svg" />New Version
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-6 my-6">
+          <div class="flex gap-4">
+            <label class="flex flex-col gap-2 flex-1">
+              <span>Name <span class="text-red">*</span></span>
               <div
-                class="p-2 px-3 flex items-center gap-2 rounded-md border border-gray-300"
+                class="p-4 flex items-center gap-2 rounded-md border border-gray-300"
               >
-                <img src="/assets/icons/search.svg" />
                 <input
                   type="text"
                   placeholder="Search this site"
                   class="border-0"
                 />
               </div>
-              <button class="outlined-btn rounded-lg">
-                <img src="/assets/icons/action-filter.svg" />
-                Filters
-              </button>
-            </div>
-            <div class="flex gap-4">
-              <button class="outlined-btn rounded-md">
-                <img src="/assets/icons/action-export.svg" />Export
-              </button>
-              <button class="filled-btn rounded-md">
-                <img src="/assets/icons/action-add.svg" />New Documents
-              </button>
-            </div>
+            </label>
+            <label class="flex flex-col gap-2 flex-1">
+              <span>Document Name <span class="text-red">*</span></span>
+              <div
+                class="p-4 flex items-center gap-2 rounded-md border border-gray-300"
+              >
+                <input
+                  type="text"
+                  placeholder="Search this site"
+                  class="border-0"
+                />
+              </div>
+            </label>
+            <label class="flex flex-col gap-2 flex-1">
+              <span>Document Type <span class="text-red">*</span></span>
+              <div
+                class="p-4 flex items-center gap-2 rounded-md border border-gray-300"
+              >
+                <input
+                  type="text"
+                  placeholder="Search this site"
+                  class="border-0"
+                />
+              </div>
+            </label>
+          </div>
+          <div class="flex gap-4">
+            <label class="flex flex-col gap-2 flex-1">
+              <span>Related Document <span class="text-red">*</span></span>
+              <div
+                class="p-4 flex items-center gap-2 rounded-md border border-gray-300"
+              >
+                <input
+                  type="text"
+                  placeholder="Search this site"
+                  class="border-0"
+                />
+              </div>
+            </label>
+            <label class="flex flex-col gap-2 flex-1">
+              <span>Signed Date <span class="text-red">*</span></span>
+              <div
+                class="p-4 flex items-center gap-2 rounded-md border border-gray-300 justify-between"
+              >
+                <input
+                  type="text"
+                  placeholder="Search this site"
+                  class="border-0"
+                />
+                <img src="/assets/icons/Icon.svg" />
+              </div>
+            </label>
+            <label class="flex flex-col gap-2 flex-1">
+              <span>Completion Date <span class="text-red">*</span></span>
+              <div
+                class="p-4 flex items-center gap-2 rounded-md border border-gray-300 justify-between"
+              >
+                <input
+                  type="text"
+                  placeholder="Search this site"
+                  class="border-0"
+                />
+                <img src="/assets/icons/Icon.svg">
+
+              </div>
+            </label>
+          </div>
+          <div class="flex gap-4">
+            <label class="flex flex-col gap-2 flex-1">
+              <span>Modified by <span class="text-gray">(Optional)</span></span>
+              <div
+                class="p-4 flex items-center gap-2 rounded-md border border-gray-300"
+              >
+                <input
+                  type="text"
+                  placeholder="Search this site"
+                  class="border-0"
+                />
+              </div>
+            </label>
+            <label class="flex flex-col gap-2 flex-1">
+              <span>Document Status <span class="text-red">*</span></span>
+              <div
+                class="p-4 flex items-center gap-2 rounded-md border border-gray-300"
+              >
+                <input
+                  type="text"
+                  placeholder="Search this site"
+                  class="border-0"
+                />
+              </div>
+            </label>
+            <label class="flex flex-col gap-2 flex-1">
+              <span>Document Version <span class="text-red">*</span></span>
+              <div
+                class="p-4 flex items-center gap-2 rounded-md border border-gray-300"
+              >
+                <input
+                  type="text"
+                  placeholder="Search this site"
+                  class="border-0"
+                />
+              </div>
+            </label>
+          </div>
+          <div class="flex gap-4">
+            <label class="flex flex-col gap-2 flex-1">
+              <span>Second Party <span class="text-red">*</span></span>
+              <div
+                class="p-4 flex items-center gap-2 rounded-md border border-gray-300"
+              >
+                <input
+                  type="text"
+                  placeholder="Search this site"
+                  class="border-0"
+                />
+              </div>
+            </label>
+            <label class="flex flex-col gap-2 flex-1">
+              <span>Document Year <span class="text-gray">(Optional)</span></span>
+              <div
+                class="p-4 flex items-center gap-2 rounded-md border border-gray-300"
+              >
+                <input
+                  type="text"
+                  placeholder="Search this site"
+                  class="border-0"
+                />
+              </div>
+            </label>
+            <label class="flex-1"></label>
           </div>
         </div>
-        <div class="my-6 flex justify-between items-center">
-          <div class="flex gap-4 items-center">
-            <label class="flex flex-col gap-2">
-              Label
-              <select
-                class="border border-gray-100 rounded-lg w-64 outline-none p-2"
-              >
-                <option value="selection">selection</option>
-              </select>
-            </label>
-            <label class="flex flex-col gap-2">
-              Label
-              <select
-                class="border border-gray-100 rounded-lg w-64 outline-none p-2"
-              >
-                <option value="selection">selection</option>
-              </select>
-            </label>
-            <label class="flex flex-col gap-2">
-              Label
-              <select
-                class="border border-gray-100 rounded-lg w-64 outline-none p-2"
-              >
-                <option value="selection">selection</option>
-              </select>
-            </label>
-            <label class="flex flex-col gap-2">
-              Label
-              <select
-                class="border border-gray-100 rounded-lg w-64 outline-none p-2"
-              >
-                <option value="selection">selection</option>
-              </select>
-            </label>
-          </div>
-          <button
-            class="border-0 bg-transparent text-primary-dark flex items-center gap-4"
-          >
-            Apply Filters <img src="/assets/icons/pointed-arrow.svg" />
-          </button>
-        </div>
-      </div>
-      <div class="border border-gray-100 rounded-lg overflow-hidden my-6">
-        <div class="p-2">
-          <table class="table">
-            <thead>
-              <tr>
-                <th class="w-10">
-                  <label class="checkbox-container">
-                    <input type="checkbox" />
-                    <span class="custom-checkbox">
-                      <svg viewBox="0 0 24 24">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                      </svg>
-                    </span>
-                  </label>
-                </th>
-                <th>Document Name</th>
-                <th>Document Name</th>
-                <th>Version #</th>
-                <th>Secondary Party</th>
-                <th>Signed Date</th>
-                <th>Completion Date</th>
-                <th>Document Type</th>
-                <th>Related Document</th>
-                <th>Release Year</th>
-                <th>Status</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <label class="checkbox-container">
-                    <input type="checkbox" />
-                    <span class="custom-checkbox">
-                      <svg viewBox="0 0 24 24">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                      </svg>
-                    </span>
-                  </label>
-                </td>
-                <td class="text-primary">URL NAME HERE</td>
-                <td class="flex items-center justify-start">
-                  <img src="/assets/icons/unloaded-file.svg" /> Filename
-                </td>
-                <td>1</td>
-                <td>Property Name</td>
-                <td>17/02/2021</td>
-                <td>17/02/2021</td>
-                <td>NDA</td>
-                <td>1</td>
-                <td>2023</td>
-                <td>
-                  <div
-                    class="rounded-md border border-accent py-1 px-2 text-accent flex items-center gap-1 w-fit text-xs"
-                  >
-                    <div class="rounded-full bg-accent w-2 h-2"></div>
-                    Started
-                  </div>
-                </td>
-                <td class="relative">
-                  <button class="bg-transparent border-0 more-button">
-                    <img src="/assets/icons/interface-more.svg" />
-                  </button>
-                  <div
-                    class="border border-gray-100 absolute bg-white top-0 rounded-lg z-10"
-                    style="left: -240%; top: -50%"
-                  >
-                    <ul class="flex flex-col">
-                      <li
-                        class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        Edit
-                      </li>
-                      <li
-                        class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        Manage
-                      </li>
-                      <li
-                        class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        View Details
-                      </li>
-                      <li
-                        class="py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        Deactivate
-                      </li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label class="checkbox-container">
-                    <input type="checkbox" />
-                    <span class="custom-checkbox">
-                      <svg viewBox="0 0 24 24">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                      </svg>
-                    </span>
-                  </label>
-                </td>
-                <td class="text-primary">URL NAME HERE</td>
-                <td class="flex items-center justify-start">
-                  <img src="/assets/icons/unloaded-file.svg" /> Filename
-                </td>
-                <td>1</td>
-                <td>Property Name</td>
-                <td>17/02/2021</td>
-                <td>17/02/2021</td>
-                <td>NDA</td>
-                <td>1</td>
-                <td>2023</td>
-                <td>
-                  <div
-                    class="rounded-md border border-accent py-1 px-2 text-accent flex items-center gap-1 w-fit text-xs"
-                  >
-                    <div class="rounded-full bg-accent w-2 h-2"></div>
-                    Started
-                  </div>
-                </td>
-                <td class="relative">
-                  <button class="bg-transparent border-0 more-button">
-                    <img src="/assets/icons/interface-more.svg" />
-                  </button>
-                  <div
-                    class="border border-gray-100 absolute bg-white top-0 rounded-lg z-10"
-                    style="left: -240%; top: -50%"
-                  >
-                    <ul class="flex flex-col">
-                      <li
-                        class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        Edit
-                      </li>
-                      <li
-                        class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        Manage
-                      </li>
-                      <li
-                        class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        View Details
-                      </li>
-                      <li
-                        class="py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        Deactivate
-                      </li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label class="checkbox-container">
-                    <input type="checkbox" />
-                    <span class="custom-checkbox">
-                      <svg viewBox="0 0 24 24">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                      </svg>
-                    </span>
-                  </label>
-                </td>
-                <td class="text-primary">URL NAME HERE</td>
-                <td class="flex items-center justify-start">
-                  <img src="/assets/icons/unloaded-file.svg" /> Filename
-                </td>
-                <td>1</td>
-                <td>Property Name</td>
-                <td>17/02/2021</td>
-                <td>17/02/2021</td>
-                <td>NDA</td>
-                <td>1</td>
-                <td>2023</td>
-                <td>
-                  <div
-                    class="rounded-md border border-accent py-1 px-2 text-accent flex items-center gap-1 w-fit text-xs"
-                  >
-                    <div class="rounded-full bg-accent w-2 h-2"></div>
-                    Started
-                  </div>
-                </td>
-                <td class="relative">
-                  <button class="bg-transparent border-0 more-button">
-                    <img src="/assets/icons/interface-more.svg" />
-                  </button>
-                  <div
-                    class="border border-gray-100 absolute bg-white top-0 rounded-lg z-10"
-                    style="left: -240%; top: -50%"
-                  >
-                    <ul class="flex flex-col">
-                      <li
-                        class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        Edit
-                      </li>
-                      <li
-                        class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        Manage
-                      </li>
-                      <li
-                        class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        View Details
-                      </li>
-                      <li
-                        class="py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        Deactivate
-                      </li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label class="checkbox-container">
-                    <input type="checkbox" />
-                    <span class="custom-checkbox">
-                      <svg viewBox="0 0 24 24">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                      </svg>
-                    </span>
-                  </label>
-                </td>
-                <td class="text-primary">URL NAME HERE</td>
-                <td class="flex items-center justify-start">
-                  <img src="/assets/icons/unloaded-file.svg" /> Filename
-                </td>
-                <td>1</td>
-                <td>Property Name</td>
-                <td>17/02/2021</td>
-                <td>17/02/2021</td>
-                <td>NDA</td>
-                <td>1</td>
-                <td>2023</td>
-                <td>
-                  <div
-                    class="rounded-md border border-accent py-1 px-2 text-accent flex items-center gap-1 w-fit text-xs"
-                  >
-                    <div class="rounded-full bg-accent w-2 h-2"></div>
-                    Started
-                  </div>
-                </td>
-                <td class="relative">
-                  <button class="bg-transparent border-0 more-button">
-                    <img src="/assets/icons/interface-more.svg" />
-                  </button>
-                  <div
-                    class="border border-gray-100 absolute bg-white top-0 rounded-lg z-10"
-                    style="left: -240%; top: -50%"
-                  >
-                    <ul class="flex flex-col">
-                      <li
-                        class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        Edit
-                      </li>
-                      <li
-                        class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        Manage
-                      </li>
-                      <li
-                        class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        View Details
-                      </li>
-                      <li
-                        class="py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        Deactivate
-                      </li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label class="checkbox-container">
-                    <input type="checkbox" />
-                    <span class="custom-checkbox">
-                      <svg viewBox="0 0 24 24">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                      </svg>
-                    </span>
-                  </label>
-                </td>
-                <td class="text-primary">URL NAME HERE</td>
-                <td class="flex items-center justify-start">
-                  <img src="/assets/icons/unloaded-file.svg" /> Filename
-                </td>
-                <td>1</td>
-                <td>Property Name</td>
-                <td>17/02/2021</td>
-                <td>17/02/2021</td>
-                <td>NDA</td>
-                <td>1</td>
-                <td>2024</td>
-                <td>
-                  <div
-                    class="rounded-md border border-gray-300 py-1 px-2 text-gray flex items-center gap-1 w-fit text-xs"
-                  >
-                    <div class="rounded-full bg-gray w-2 h-2"></div>
-                    Not Started
-                  </div>
-                </td>
-                <td class="relative">
-                  <button class="bg-transparent border-0 more-button">
-                    <img src="/assets/icons/interface-more.svg" />
-                  </button>
-                  <div
-                    class="border border-gray-100 absolute bg-white top-0 rounded-lg z-10"
-                    style="left: -240%; top: -50%"
-                  >
-                    <ul class="flex flex-col">
-                      <li
-                        class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        Edit
-                      </li>
-                      <li
-                        class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        Manage
-                      </li>
-                      <li
-                        class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        View Details
-                      </li>
-                      <li
-                        class="py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        Deactivate
-                      </li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label class="checkbox-container">
-                    <input type="checkbox" />
-                    <span class="custom-checkbox">
-                      <svg viewBox="0 0 24 24">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                      </svg>
-                    </span>
-                  </label>
-                </td>
-                <td class="text-primary">URL NAME HERE</td>
-                <td class="flex items-center justify-start">
-                  <img src="/assets/icons/unloaded-file.svg" /> Filename
-                </td>
-                <td>1</td>
-                <td>Property Name</td>
-                <td>17/02/2021</td>
-                <td>17/02/2021</td>
-                <td>NDA</td>
-                <td>1</td>
-                <td>2023</td>
-                <td>
-                  <div
-                    class="rounded-md border border-accent py-1 px-2 text-accent flex items-center gap-1 w-fit text-xs"
-                  >
-                    <div class="rounded-full bg-accent w-2 h-2"></div>
-                    Started
-                  </div>
-                </td>
-                <td class="relative">
-                  <button class="bg-transparent border-0 more-button">
-                    <img src="/assets/icons/interface-more.svg" />
-                  </button>
-                  <div
-                    class="border border-gray-100 absolute bg-white top-0 rounded-lg z-10"
-                    style="left: -240%; top: -50%"
-                  >
-                    <ul class="flex flex-col">
-                      <li
-                        class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        Edit
-                      </li>
-                      <li
-                        class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        Manage
-                      </li>
-                      <li
-                        class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        View Details
-                      </li>
-                      <li
-                        class="py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        Deactivate
-                      </li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <label class="checkbox-container">
-                    <input type="checkbox" />
-                    <span class="custom-checkbox">
-                      <svg viewBox="0 0 24 24">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                      </svg>
-                    </span>
-                  </label>
-                </td>
-                <td class="text-primary">URL NAME HERE</td>
-                <td class="flex items-center justify-start">
-                  <img src="/assets/icons/unloaded-file.svg" /> Filename
-                </td>
-                <td>1</td>
-                <td>Property Name</td>
-                <td>17/02/2021</td>
-                <td>17/02/2021</td>
-                <td>NDA</td>
-                <td>1</td>
-                <td>2023</td>
-                <td>
-                  <div
-                    class="rounded-md border border-accent py-1 px-2 text-accent flex items-center gap-1 w-fit text-xs"
-                  >
-                    <div class="rounded-full bg-accent w-2 h-2"></div>
-                    Started
-                  </div>
-                </td>
-                <td class="relative">
-                  <button class="bg-transparent border-0 more-button">
-                    <img src="/assets/icons/interface-more.svg" />
-                  </button>
-                  <div
-                    class="border border-gray-100 absolute bg-white top-0 rounded-lg z-10"
-                    style="left: -240%; top: -50%"
-                  >
-                    <ul class="flex flex-col">
-                      <li
-                        class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        Edit
-                      </li>
-                      <li
-                        class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        Manage
-                      </li>
-                      <li
-                        class="border-b border-gray-100 py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        View Details
-                      </li>
-                      <li
-                        class="py-2 px-4 text-left text-primary-light cursor-pointer text-sm"
-                      >
-                        Deactivate
-                      </li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div
-          class="border-t border-t-gray-100 p-4 flex justify-between items-center"
-        >
-          <div>
-            <p class="text-xs font-normal flex gap-3 items-center">
-              Display
-              <select class="border border-gray-100 rounded-lg py-1 px-2">
-                <option value="10">10</option>
-                <option value="25">25</option>
-                <option value="50">50</option>
-                <option value="100">100</option>
-              </select>
-              12 results out of 250
-            </p>
-          </div>
-          <div class="flex gap-4 items-center">
-            <div>
-              <p class="text-xs font-normal">Page 1 of 5</p>
-            </div>
-            <div class="flex gap-2">
-              <button
-                class="rounded-lg w-8 h-8 border border-gray-100 bg-light flex items-center justify-center"
-              >
-                <img src="/assets/icons/disabled-arrow.svg" />
-              </button>
-              <button
-                class="rounded-lg w-8 h-8 border border-gray-100 bg-light flex items-center justify-center"
-              >
-                <img src="/assets/icons/single-disabled-arrow.svg" />
-              </button>
-              <button
-                class="rounded-lg w-8 h-8 border-0 bg-primary text-white flex items-center justify-center"
-              >
-                1
-              </button>
-              <button
-                class="rounded-lg w-8 h-8 border border-gray-100 bg-white text-primary-dark flex items-center justify-center"
-              >
-                2
-              </button>
-              <button
-                class="rounded-lg w-8 h-8 border border-gray-100 bg-white text-primary-dark flex items-center justify-center"
-              >
-                3
-              </button>
-              <button
-                class="rounded-lg w-8 h-8 border border-gray-100 bg-white text-primary-dark flex items-center justify-center"
-              >
-                ...
-              </button>
-              <button
-                class="rounded-lg w-8 h-8 border border-gray-100 bg-white text-primary-dark flex items-center justify-center"
-              >
-                20
-              </button>
-              <button
-                class="rounded-lg w-8 h-8 border border-gray-100 bg-white flex items-center justify-center"
-              >
-                <img src="/assets/icons/single-arrow.svg" />
-              </button>
-              <button
-                class="rounded-lg w-8 h-8 border border-gray-100 bg-white flex items-center justify-center"
-              >
-                <img src="/assets/icons/double-arrow.svg" />
-              </button>
-            </div>
-          </div>
+        <div class="w-full flex justify-end gap-3">
+          <button class="outlined-btn rounded-md">Cancel</button>
+          <button class="filled-btn rounded-md">Save</button>
         </div>
       </div>
     </main>
