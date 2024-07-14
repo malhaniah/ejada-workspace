@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejada Workspace</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/sankey.js"></script>
+    <script src="https://code.highcharts.com/modules/organization.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
   </head>
-
   <body>
     <header>
       <div class="sharepoint">
@@ -157,7 +161,13 @@
         </div>
       </div>
 
-      <img src="/assets/images/digram.png" alt="">
+      <figure class="highcharts-figure">
+        <div id="container"></div>
+        <p class="highcharts-description">
+          Organization charts are a common case of hierarchical network charts,
+          where the parent/child relationships between nodes are visualized.
+        </p>
+      </figure>
     </main>
     <footer>
       <div class="brand">

@@ -89,5 +89,132 @@
 })();
 
 (function toggleShow() {
-  $(".new-document-wrapper").hide()
-})()
+  $(".new-document-wrapper").hide();
+})();
+
+Highcharts.chart("container", {
+  chart: {
+    height: 600,
+    inverted: true,
+  },
+
+  title: {
+    text: "Organizational Structure",
+  },
+
+  accessibility: {
+    point: {
+      descriptionFormat:
+        "{add index 1}. {toNode.name}" +
+        "{#if (ne toNode.name toNode.id)}, {toNode.id}{/if}, " +
+        "reports to {fromNode.id}",
+    },
+  },
+
+  series: [
+    {
+      type: "organization",
+      name: "Ejada",
+      data: [
+        ["CEO", "CTO"],
+        ["CTO", "CPO"],
+        ["CPO", "CTO"],
+        ["CPO", "CPO"],
+        ["CPO", "CSO"],
+        ["CPO", "HR"],
+        ["CPO", "Product"],
+        ["CPO", "Web"],
+        ["CSO", "Sales"],
+        ["HR", "Market"],
+        ["CSO", "Market"],
+        ["HR", "Market"],
+        ["CTO", "Market"],
+      ],
+      levels: [
+        {
+          level: 0,
+          color: "silver",
+          dataLabels: {
+            color: "black",
+          },
+        },
+        {
+          level: 1,
+          color: "silver",
+          dataLabels: {
+            color: "black",
+          },
+          height: 25,
+        },
+        {
+          level: 2,
+          color: "#980104",
+        },
+        {
+          level: 4,
+          color: "#359154",
+        },
+      ],
+      nodes: [
+        {
+          id: "CEO",
+          title: "CEO",
+          name: "NAME HERE",
+        },
+        {
+          id: "HR",
+          title: "CFO",
+          name: "NAME HERE",
+          color: "#007ad0",
+        },
+        {
+          id: "CTO",
+          title: "CTO",
+          name: "NAME HERE",
+        },
+        {
+          id: "CPO",
+          title: "CPO",
+          name: "NAME HERE",
+        },
+        {
+          id: "CSO",
+          title: "CSO",
+          name: "NAME HERE",
+        },
+        {
+          id: "Product",
+          name: "Product developers",
+        },
+        {
+          id: "Web",
+          name: "Web devs, sys admin",
+        },
+        {
+          id: "Sales",
+          name: "Sales team",
+        },
+        {
+          id: "Market",
+          name: "Marketing team",
+          column: 5,
+        },
+      ],
+      colorByPoint: false,
+      color: "#007ad0",
+      dataLabels: {
+        color: "white",
+      },
+      borderColor: "white",
+      nodeWidth: "50",
+    },
+  ],
+  tooltip: {
+    outside: false,
+  },
+  exporting: {
+    allowHTML: false,
+    sourceWidth: 800,
+    sourceHeight: 600,
+  },
+});
