@@ -126,8 +126,8 @@
     </header>
     <main>
       <!-- Partners section -->
-      <div class="partners-container">
-        <div class="header">
+      <div class="flex flex-col items-center">
+        <div class="flex items-center flex-col gap-4">
           <h1 class="text-xl text-primary-dark">
             Top-Notch Technology Partners
           </h1>
@@ -136,231 +136,264 @@
             unprecedented growth through an integrated solutions marketplace.
           </p>
           <!-- Search component within the partners section -->
-          <div class="search-component">
-            <input type="text" placeholder="Search" />
+          <div
+            class="rounded-md bg-white border border-gray-300 py-2 px-4 w-full flex items-center justify-between"
+          >
+            <input type="text" placeholder="Search" class="border-0 w-full" />
             <img src="/assets/icons/microphone.svg" alt="microphone icon" />
           </div>
         </div>
-        <div class="partners-body">
+        <div class="m-24 flex justify-center gap-4">
           <!-- Partners categories -->
-          <div class="partners-categories shadow">
+          <div
+            class="rounded-lg p-8 flex gap-2 flex-col shadow flex-1 w-full flex-basis-1 partners-categories"
+          >
             <h1 class="text-md text-primary-dark">Partners Categories</h1>
             <ul class="list">
               <li class="list-item">
                 <img
                   src="/assets/icons/inactive-rounded.svg"
-                  class="inactive-rounded"
                   alt="inactive icon"
+                  class="inactive-rounded"
                 />
                 <img
                   src="/assets/icons/active-rounded.svg"
-                  class="active-rounded"
                   alt="active icon"
+                  class="active-rounded"
                 />
                 Insurance
               </li>
-              <li class="list-item active">
+              <li class="list-item">
                 <img
                   src="/assets/icons/inactive-rounded.svg"
-                  class="inactive-rounded"
                   alt="inactive icon"
+                  class="inactive-rounded"
                 />
                 <img
                   src="/assets/icons/active-rounded.svg"
-                  class="active-rounded"
                   alt="active icon"
-                />Finance
+                  class="active-rounded"
+                />
+                Insurance
               </li>
               <li class="list-item">
                 <img
                   src="/assets/icons/inactive-rounded.svg"
-                  class="inactive-rounded"
                   alt="inactive icon"
+                  class="inactive-rounded"
                 />
                 <img
                   src="/assets/icons/active-rounded.svg"
-                  class="active-rounded"
                   alt="active icon"
-                />Aviation
-              </li>
-              <!-- Repeated Aviation category, likely an error -->
-              <li class="list-item">
-                <img
-                  src="/assets/icons/inactive-rounded.svg"
-                  class="inactive-rounded"
-                  alt="inactive icon"
+                  class="active-rounded"
                 />
-                <img
-                  src="/assets/icons/active-rounded.svg"
-                  class="active-rounded"
-                  alt="active icon"
-                />Aviation
+                Insurance
               </li>
               <li class="list-item">
                 <img
                   src="/assets/icons/inactive-rounded.svg"
-                  class="inactive-rounded"
                   alt="inactive icon"
+                  class="inactive-rounded"
                 />
                 <img
                   src="/assets/icons/active-rounded.svg"
-                  class="active-rounded"
                   alt="active icon"
-                />Aviation
+                  class="active-rounded"
+                />
+                Insurance
+              </li>
+              <li class="list-item">
+                <img
+                  src="/assets/icons/inactive-rounded.svg"
+                  alt="inactive icon"
+                  class="inactive-rounded"
+                />
+                <img
+                  src="/assets/icons/active-rounded.svg"
+                  alt="active icon"
+                  class="active-rounded"
+                />
+                Insurance
               </li>
             </ul>
           </div>
           <!-- Partners list -->
-          <div class="partners">
-            <div class="partner shadow">
-              <div class="content">
-                <h3 class="text-sm text-primary-dark">Alrajhi Bank</h3>
-                <p class="text-xs">
+          <div class="flex gap-12 w-full flex-wrap flex-basis-3">
+            <div
+              class="bg-white rounded-md p-8 shadow flex justify-between gap-2 flex-basis-1"
+            >
+              <div class="flex-basis-2 flex flex-col gap-4">
+                <h3 class="text-primary-dark">Alrajhi Bank</h3>
+                <p>
                   But I must explain to you how all this mistaken idea of
                   denouncing pleasure and praising.
                 </p>
-                <a href="#" class="text-sm text-primary-dark"
-                  >Learn more
-                  <img src="./assets/icons/info-filled.svg" alt="info icon"
+                <a
+                  href="#"
+                  class="text-primary-dark decoration-none flex items-center gap-2"
+                  >Learn More <img src="/assets/icons/info-filled.svg" alt=""
                 /></a>
               </div>
-              <div class="image-container">
-                <img src="/assets/logos/alrajhi.svg" alt="Alrajhi Bank logo" />
+              <div class="flex-basis-1">
+                <img src="/assets/logos/alrajhi.svg" />
               </div>
             </div>
-            <div class="partner shadow">
-              <div class="content">
-                <h3 class="text-sm text-primary-dark">IBM</h3>
-                <p class="text-xs">
+            <div
+              class="bg-white rounded-md p-8 shadow flex justify-between gap-2 flex-basis-1"
+            >
+              <div class="flex-basis-2 flex flex-col gap-4">
+                <h3 class="text-primary-dark">Alrajhi Bank</h3>
+                <p>
                   But I must explain to you how all this mistaken idea of
                   denouncing pleasure and praising.
                 </p>
-                <a href="#" class="text-sm text-primary-dark"
-                  >Learn more
-                  <img src="/assets/icons/info-filled.svg" alt="info icon"
+                <a
+                  href="#"
+                  class="text-primary-dark decoration-none flex items-center gap-2"
+                  >Learn More <img src="/assets/icons/info-filled.svg" alt=""
                 /></a>
               </div>
-              <div class="image-container">
-                <img src="/assets/logos/ibm.svg" alt="IBM logo" />
+              <div class="flex-basis-1">
+                <img src="/assets/logos/alrajhi.svg" />
               </div>
             </div>
-            <div class="partner shadow">
-              <div class="content">
-                <h3 class="text-sm text-primary-dark">Google</h3>
-                <p class="text-xs">
+            <div
+              class="bg-white rounded-md p-8 shadow flex justify-between gap-2 flex-basis-1"
+            >
+              <div class="flex-basis-2 flex flex-col gap-4">
+                <h3 class="text-primary-dark">Alrajhi Bank</h3>
+                <p>
                   But I must explain to you how all this mistaken idea of
                   denouncing pleasure and praising.
                 </p>
-                <a href="#" class="text-sm text-primary-dark"
-                  >Learn more
-                  <img src="/assets/icons/info-filled.svg" alt="info icon"
+                <a
+                  href="#"
+                  class="text-primary-dark decoration-none flex items-center gap-2"
+                  >Learn More <img src="/assets/icons/info-filled.svg" alt=""
                 /></a>
               </div>
-              <div class="image">
-                <img src="/assets/logos/google.svg" alt="Google logo" />
+              <div class="flex-basis-1">
+                <img src="/assets/logos/alrajhi.svg" />
               </div>
             </div>
-            <div class="partner shadow">
-              <div class="content">
-                <h3 class="text-sm text-primary-dark">Aramco</h3>
-                <p class="text-xs">
+            <div
+              class="bg-white rounded-md p-8 shadow flex justify-between gap-2 flex-basis-1"
+            >
+              <div class="flex-basis-2 flex flex-col gap-4">
+                <h3 class="text-primary-dark">Alrajhi Bank</h3>
+                <p>
                   But I must explain to you how all this mistaken idea of
                   denouncing pleasure and praising.
                 </p>
-                <a href="#" class="text-sm text-primary-dark"
-                  >Learn more
-                  <img src="/assets/icons/info-filled.svg" alt="info icon"
+                <a
+                  href="#"
+                  class="text-primary-dark decoration-none flex items-center gap-2"
+                  >Learn More <img src="/assets/icons/info-filled.svg" alt=""
                 /></a>
               </div>
-              <div class="image">
-                <img src="/assets/logos/aramco.svg" alt="Aramco logo" />
+              <div class="flex-basis-1">
+                <img src="/assets/logos/alrajhi.svg" />
               </div>
             </div>
-            <!-- Repeated Google partner, likely an error -->
-            <div class="partner shadow">
-              <div class="content">
-                <h3 class="text-sm text-primary-dark">Google</h3>
-                <p class="text-xs">
+            <div
+              class="bg-white rounded-md p-8 shadow flex justify-between gap-2 flex-basis-1"
+            >
+              <div class="flex-basis-2 flex flex-col gap-4">
+                <h3 class="text-primary-dark">Alrajhi Bank</h3>
+                <p>
                   But I must explain to you how all this mistaken idea of
                   denouncing pleasure and praising.
                 </p>
-                <a href="#" class="text-sm text-primary-dark"
-                  >Learn more
-                  <img src="/assets/icons/info-filled.svg" alt="info icon"
+                <a
+                  href="#"
+                  class="text-primary-dark decoration-none flex items-center gap-2"
+                  >Learn More <img src="/assets/icons/info-filled.svg" alt=""
                 /></a>
               </div>
-              <div class="image">
-                <img src="/assets/logos/google.svg" alt="Google logo" />
+              <div class="flex-basis-1">
+                <img src="/assets/logos/alrajhi.svg" />
               </div>
             </div>
-            <div class="partner shadow">
-              <div class="content">
-                <h3 class="text-sm text-primary-dark">Microsoft</h3>
-                <p class="text-xs">
+            <div
+              class="bg-white rounded-md p-8 shadow flex justify-between gap-2 flex-basis-1"
+            >
+              <div class="flex-basis-2 flex flex-col gap-4">
+                <h3 class="text-primary-dark">Alrajhi Bank</h3>
+                <p>
                   But I must explain to you how all this mistaken idea of
                   denouncing pleasure and praising.
                 </p>
-                <a href="#" class="text-sm text-primary-dark"
-                  >Learn more
-                  <img src="/assets/icons/info-filled.svg" alt="info icon"
+                <a
+                  href="#"
+                  class="text-primary-dark decoration-none flex items-center gap-2"
+                  >Learn More <img src="/assets/icons/info-filled.svg" alt=""
                 /></a>
               </div>
-              <div class="image">
-                <img src="/assets/logos/microsoft.svg" alt="Microsoft logo" />
+              <div class="flex-basis-1">
+                <img src="/assets/logos/alrajhi.svg" />
               </div>
             </div>
-            <!-- Repeated Google partner, likely an error -->
-            <div class="partner shadow">
-              <div class="content">
-                <h3 class="text-sm text-primary-dark">Google</h3>
-                <p class="text-xs">
+            <div
+              class="bg-white rounded-md p-8 shadow flex justify-between gap-2 flex-basis-1"
+            >
+              <div class="flex-basis-2 flex flex-col gap-4">
+                <h3 class="text-primary-dark">Alrajhi Bank</h3>
+                <p>
                   But I must explain to you how all this mistaken idea of
                   denouncing pleasure and praising.
                 </p>
-                <a href="#" class="text-sm text-primary-dark"
-                  >Learn more
-                  <img src="/assets/icons/info-filled.svg" alt="info icon"
+                <a
+                  href="#"
+                  class="text-primary-dark decoration-none flex items-center gap-2"
+                  >Learn More <img src="/assets/icons/info-filled.svg" alt=""
                 /></a>
               </div>
-              <div class="image">
-                <img src="/assets/logos/google.svg" alt="Google logo" />
+              <div class="flex-basis-1">
+                <img src="/assets/logos/alrajhi.svg" />
               </div>
             </div>
-            <div class="partner shadow">
-              <div class="content">
-                <h3 class="text-sm text-primary-dark">IBM</h3>
-                <p class="text-xs">
+            <div
+              class="bg-white rounded-md p-8 shadow flex justify-between gap-2 flex-basis-1"
+            >
+              <div class="flex-basis-2 flex flex-col gap-4">
+                <h3 class="text-primary-dark">Alrajhi Bank</h3>
+                <p>
                   But I must explain to you how all this mistaken idea of
                   denouncing pleasure and praising.
                 </p>
-                <a href="#" class="text-sm text-primary-dark"
-                  >Learn more
-                  <img src="/assets/icons/info-filled.svg" alt="info icon"
+                <a
+                  href="#"
+                  class="text-primary-dark decoration-none flex items-center gap-2"
+                  >Learn More <img src="/assets/icons/info-filled.svg" alt=""
                 /></a>
               </div>
-              <div class="image">
-                <img src="/assets/logos/ibm.svg" alt="IBM logo" />
+              <div class="flex-basis-1">
+                <img src="/assets/logos/alrajhi.svg" />
               </div>
             </div>
-            <div class="partner shadow">
-              <div class="content">
-                <h3 class="text-sm text-primary-dark">Alrajhi Bank</h3>
-                <p class="text-xs">
+            <div
+              class="bg-white rounded-md p-8 shadow flex justify-between gap-2 flex-basis-1"
+            >
+              <div class="flex-basis-2 flex flex-col gap-4">
+                <h3 class="text-primary-dark">Alrajhi Bank</h3>
+                <p>
                   But I must explain to you how all this mistaken idea of
                   denouncing pleasure and praising.
                 </p>
-                <a href="#" class="text-sm text-primary-dark"
-                  >Learn more
-                  <img src="/assets/icons/info-filled.svg" alt="info icon"
+                <a
+                  href="#"
+                  class="text-primary-dark decoration-none flex items-center gap-2"
+                  >Learn More <img src="/assets/icons/info-filled.svg" alt=""
                 /></a>
               </div>
-              <div class="image">
-                <img src="/assets/logos/alrajhi.svg" alt="Alrajhi Bank logo" />
+              <div class="flex-basis-1">
+                <img src="/assets/logos/alrajhi.svg" />
               </div>
             </div>
+            
           </div>
         </div>
-        <button class="filled-btn rounded-full uppercase">
+        <button class="filled-btn rounded-full uppercase w-fit">
           Load More
           <img src="./assets/icons/arrow-line.svg" alt="arrow icon" />
         </button>
