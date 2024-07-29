@@ -2846,3 +2846,15 @@ input {
 .cursor-pointer{
   cursor: pointer;
 }
+
+.text-error{
+  color: rgb(255, 73, 73);
+}
+
+.bg-error{
+  background-color: rgb(255, 73, 73);
+}
+
+.border-error{
+  border: 1px solid rgb(255, 73, 73);
+}

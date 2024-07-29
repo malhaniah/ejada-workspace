@@ -2,22 +2,152 @@
 <html>
   <head>
     <script src="/scripts/index.js"></script>
-    <style>
-      /* Color Variables */
-      :root {
-        --ejada-main-color: #001081;
-        --ejada-secondary-color: #0000ff;
-        --ejada-accent-color: #1fed93;
-        --checkbox-bg: #ffffff;
-        --checkbox-border: #d1d5db;
-        --checkbox-checked-bg: var(--ejada-main-color);
-        --checkbox-checked-border: var(--ejada-main-color);
-      }
-    </style>
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    
+    <header>
+      <div class="sharepoint">
+        <!-- Left Controls Component -->
+        <div class="component">
+          <div class="waffle">
+            <div class="sub-waffle">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="sub-waffle">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="sub-waffle">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+          <img src="/assets/logos/logo-white-minimal.svg" alt="minimal logo" />
+          <h3 class="text-sm text-white font-semibold">SharePoint</h3>
+        </div>
+        <!-- Search Component -->
+        <div class="component justify-center">
+          <div class="search-component p-2 px-3 rounded-md">
+            <img src="/assets/icons/search.svg" />
+            <input type="text" placeholder="Search this site" />
+          </div>
+        </div>
+        <!-- Right Controls Component -->
+        <div class="component justify-end">
+          <div class="sub-component">
+            <img src="/assets/icons/megaphone.svg" />
+          </div>
+          <div class="sub-component">
+            <img src="/assets/icons/settings.svg" />
+          </div>
+          <div class="sub-component">
+            <img src="/assets/icons/question.svg" />
+          </div>
+          <div class="sub-component">
+            <img src="/assets/images/persona.svg" />
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="logo">
+          <img src="/assets/logos/logo-default.svg" />
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              Workspace
+              <img src="/assets/icons/arrow.svg" />
+            </a>
+            <ul
+              class="flex bg-primary p-4 shadow flex-col rounded-lg w-96 justify-between gap-4 absolute my-6"
+            >
+              <li class="text-white font-bold">Employee Services</li>
+              <li><a href="#" class="text-white">Lorem ipsum </a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              Employee Services
+              <img src="/assets/icons/arrow.svg" />
+            </a>
+            <ul
+              class="flex bg-primary p-4 shadow flex-col rounded-lg w-96 justify-between gap-4 absolute my-6"
+            >
+              <li class="text-white font-bold">Employee Services</li>
+              <li><a href="#" class="text-white">Lorem ipsum </a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              Departments
+              <img src="/assets/icons/arrow.svg" />
+            </a>
+            <ul
+              class="flex bg-primary p-4 shadow flex-col rounded-lg w-96 justify-between gap-4 absolute my-6"
+            >
+              <li class="text-white font-bold">Employee Services</li>
+              <li><a href="#" class="text-white">Lorem ipsum </a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              Resources
+              <img src="/assets/icons/arrow.svg" />
+            </a>
+            <ul
+              class="flex bg-primary p-4 shadow flex-col rounded-lg w-96 justify-between gap-4 absolute my-6"
+            >
+              <li class="text-white font-bold">Employee Services</li>
+              <li><a href="#" class="text-white">Lorem ipsum </a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              Knowledge
+              <img src="/assets/icons/arrow.svg" />
+            </a>
+            <ul
+              class="flex bg-primary p-4 shadow flex-col rounded-lg w-96 justify-between gap-4 absolute my-6"
+            >
+              <li class="text-white font-bold">Employee Services</li>
+              <li><a href="#" class="text-white">Lorem ipsum </a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">News</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+        </ul>
+        <div class="greetings">
+          <h3 class="text-sm font-normal text-primary-dark">
+            Welcome Back!, Mohammed.
+          </h3>
+        </div>
+      </nav>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(".nav-item").children("ul").hide();
+      $(".nav-item").on("click", function () {
+        $(".nav-item").removeClass("active");
+        $(this).addClass("active");
+        $(".nav-item").children("ul").hide();
+        $(this).children("ul").fadeToggle(300);
+      });
+    </script>
   </body>
 </html>
