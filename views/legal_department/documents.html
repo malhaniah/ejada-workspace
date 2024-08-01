@@ -757,6 +757,11 @@
                   class="border-0"
                 />
               </div>
+              <!-- error message for required filed  -->
+              <div class="field-error-msg">
+                <span>This filed Required </span>
+              </div>
+              <!-- -------------------- -->
             </label>
             <label class="flex flex-col gap-2 flex-1">
               <span>Document Name <span class="text-red">*</span></span>
@@ -772,7 +777,8 @@
             </label>
             <label class="flex flex-col gap-2 flex-1">
               <span>Document Type <span class="text-red">*</span></span>
-              <div
+
+              <!-- <div
                 class="p-4 flex items-center gap-2 rounded-md border border-gray-300"
               >
                 <input
@@ -780,7 +786,17 @@
                   placeholder="Search this site"
                   class="border-0"
                 />
+              </div> -->
+              <!-------- using drop down ------------->
+              <div
+                class="drop-down select p-4 flex items-center gap-2 rounded-md border border-gray-300"
+              >
+                <select name="" id="" placeholder="test">
+                  <option value="">Choose Type</option>
+                </select>
+                <img src="../../assets/icons/dropdawn.svg" alt="" />
               </div>
+              <!-- --------------- -->
             </label>
           </div>
           <div class="flex gap-4">
@@ -819,8 +835,7 @@
                   placeholder="Search this site"
                   class="border-0"
                 />
-                <img src="/assets/icons/Icon.svg">
-
+                <img src="/assets/icons/Icon.svg" />
               </div>
             </label>
           </div>
@@ -876,7 +891,9 @@
               </div>
             </label>
             <label class="flex flex-col gap-2 flex-1">
-              <span>Document Year <span class="text-gray">(Optional)</span></span>
+              <span
+                >Document Year <span class="text-gray">(Optional)</span></span
+              >
               <div
                 class="p-4 flex items-center gap-2 rounded-md border border-gray-300"
               >

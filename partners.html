@@ -143,7 +143,9 @@
             <img src="/assets/icons/microphone.svg" alt="microphone icon" />
           </div>
         </div>
-        <div class="m-24 flex justify-center gap-4">
+        <div
+          class="m-24 flex justify-center gap-4 Partners-categories-container"
+        >
           <!-- Partners categories -->
           <div
             class="rounded-lg p-8 flex gap-2 flex-col shadow flex-1 w-full flex-basis-1 partners-categories"
@@ -218,7 +220,14 @@
             </ul>
           </div>
           <!-- Partners list -->
-          <div class="flex gap-12 w-full flex-wrap flex-basis-3">
+          <div
+            class="flex gap-12 w-full flex-wrap flex-basis-3 partner-list-cards"
+          >
+            <!----- if there is no parnter --- -->
+            <!-- <div class="empty-parnters">
+              <p>No Parnters Available For This Catigory</p>
+            </div> -->
+            <!-- ---------------------------------- -->
             <div
               class="bg-white rounded-md p-8 shadow flex justify-between gap-2 flex-basis-1"
             >
@@ -371,32 +380,26 @@
                 <img src="/assets/logos/alrajhi.svg" />
               </div>
             </div>
-            <div
-              class="bg-white rounded-md p-8 shadow flex justify-between gap-2 flex-basis-1"
-            >
-              <div class="flex-basis-2 flex flex-col gap-4">
-                <h3 class="text-primary-dark">Alrajhi Bank</h3>
-                <p>
-                  But I must explain to you how all this mistaken idea of
-                  denouncing pleasure and praising.
-                </p>
-                <a
-                  href="#"
-                  class="text-primary-dark decoration-none flex items-center gap-2"
-                  >Learn More <img src="/assets/icons/info-filled.svg" alt=""
-                /></a>
-              </div>
-              <div class="flex-basis-1">
-                <img src="/assets/logos/alrajhi.svg" />
-              </div>
-            </div>
-            
           </div>
         </div>
-        <button class="filled-btn rounded-full uppercase w-fit">
-          Load More
-          <img src="./assets/icons/arrow-line.svg" alt="arrow icon" />
-        </button>
+        <div>
+          <button id="load-btn" class="filled-btn rounded-full uppercase w-fit">
+            Load More
+            <img src="./assets/icons/arrow-line.svg" alt="arrow icon" />
+          </button>
+
+          <button
+            id="less-btn"
+            class="hide filled-btn rounded-full uppercase w-fit"
+          >
+            show less
+            <img
+              class="flip-img"
+              src="./assets/icons/arrow-line.svg"
+              alt="arrow icon"
+            />
+          </button>
+        </div>
       </div>
       <!-- Closing paragraph -->
       <div class="paragraph">
@@ -529,5 +532,21 @@
     <!-- jQuery and custom script -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="/js/index.js"></script>
+    <script>
+      // load more partners
+      let partners = document.querySelector(".partner-list-cards");
+      let loadBtn = document.querySelector("#load-btn");
+      let lessBtn = document.querySelector("#less-btn");
+      loadBtn.addEventListener("click", function () {
+        partners.classList.add("load-more");
+        loadBtn.classList.add("hide");
+        lessBtn.classList.remove("hide");
+      });
+      lessBtn.addEventListener("click", function () {
+        partners.classList.remove("load-more");
+        loadBtn.classList.remove("hide");
+        lessBtn.classList.add("hide");
+      });
+    </script>
   </body>
 </html>

@@ -59,7 +59,7 @@
               <img src="/assets/icons/arrow.svg" />
             </a>
             <ul
-              class="flex bg-primary p-4 shadow flex-col rounded-lg w-96 justify-between gap-4 absolute my-6"
+              class="hide drop-down-list flex bg-primary p-4 shadow flex-col rounded-lg w-96 justify-between gap-4 absolute my-6"
             >
               <li class="text-white font-bold">Employee Services</li>
               <li><a href="#" class="text-white">Lorem ipsum </a></li>
@@ -74,7 +74,7 @@
               <img src="/assets/icons/arrow.svg" />
             </a>
             <ul
-              class="flex bg-primary p-4 shadow flex-col rounded-lg w-96 justify-between gap-4 absolute my-6"
+              class="hide drop-down-list flex bg-primary p-4 shadow flex-col rounded-lg w-96 justify-between gap-4 absolute my-6"
             >
               <li class="text-white font-bold">Employee Services</li>
               <li><a href="#" class="text-white">Lorem ipsum </a></li>
@@ -90,7 +90,7 @@
               <img src="/assets/icons/arrow.svg" />
             </a>
             <ul
-              class="flex bg-primary p-4 shadow flex-col rounded-lg w-96 justify-between gap-4 absolute my-6"
+              class="hide drop-down-list flex bg-primary p-4 shadow flex-col rounded-lg w-96 justify-between gap-4 absolute my-6"
             >
               <li class="text-white font-bold">Employee Services</li>
               <li><a href="#" class="text-white">Lorem ipsum </a></li>
@@ -105,7 +105,7 @@
               <img src="/assets/icons/arrow.svg" />
             </a>
             <ul
-              class="flex bg-primary p-4 shadow flex-col rounded-lg w-96 justify-between gap-4 absolute my-6"
+              class="hide drop-down-list flex bg-primary p-4 shadow flex-col rounded-lg w-96 justify-between gap-4 absolute my-6"
             >
               <li class="text-white font-bold">Employee Services</li>
               <li><a href="#" class="text-white">Lorem ipsum </a></li>
@@ -120,7 +120,7 @@
               <img src="/assets/icons/arrow.svg" />
             </a>
             <ul
-              class="flex bg-primary p-4 shadow flex-col rounded-lg w-96 justify-between gap-4 absolute my-6"
+              class="hide drop-down-list flex bg-primary p-4 shadow flex-col rounded-lg w-96 justify-between gap-4 absolute my-6"
             >
               <li class="text-white font-bold">Employee Services</li>
               <li><a href="#" class="text-white">Lorem ipsum </a></li>
@@ -141,18 +141,33 @@
     </header>
     <main>
       <!-- for test bg color-->
-      <!-- <div class="gradient-primary" style="height: 400px"></div> -->
+      <div class="gradient-primary" style="height: 400px"></div>
     </main>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
-      $(".nav-item").children("ul").hide();
-      $(".nav-item").on("click", function () {
-        $(".nav-item").removeClass("active");
-        $(this).addClass("active");
-        $(".nav-item").children("ul").hide();
-        $(this).children("ul").fadeToggle(300);
+      let navItem = document.querySelectorAll(".nav-item");
+      let navItemUL = document.querySelectorAll(".drop-down-list");
+
+      navItem.forEach((element, index) => {
+        element.addEventListener("click", (e) => {
+          navItemUL.forEach((ele) => {
+            ele.classList.add("hide");
+          });
+          navItemUL[index - 1].classList.toggle("hide");
+          console.log("test" + index);
+        });
+      });
+
+      //   ////////// hide nav list when click outside
+      window.addEventListener("click", function (e) {
+        if (
+          !e.target.closest(".nav-item") &&
+          !e.target.closest(".drop-down-list")
+        ) {
+          navItemUL.forEach((ele) => {
+            ele.classList.add("hide");
+          });
+        }
       });
     </script>
-    <script src="/js/index.js"></script>
   </body>
 </html>
