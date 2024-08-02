@@ -864,10 +864,12 @@ nav {
 /*---- end  home page----- */
 /* ---the drop down --- */
 
-.drop-down {
+.drop-down-field {
   justify-content: space-between;
+  height: 52px;
 }
-.drop-down select {
+
+.drop-down-field select {
   outline: none;
   width: 100%;
   appearance: none;
