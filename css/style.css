@@ -112,35 +112,35 @@ ul {
 
 /* General Styles */
 .text-4xl {
-  font-size: var(--heading-4xl);
+  font-size: var(--heading-4xl) !important;
 }
 
 .text-3xl {
-  font-size: var(--heading-3xl);
+  font-size: var(--heading-3xl) !important;
 }
 
 .text-2xl {
-  font-size: var(--heading-2xl);
+  font-size: var(--heading-2xl) !important;
 }
 
 .text-xl {
-  font-size: var(--heading-xl);
+  font-size: var(--heading-xl) !important;
 }
 
 .text-lg {
-  font-size: var(--heading-lg);
+  font-size: var(--heading-lg) !important;
 }
 
 .text-md {
-  font-size: var(--heading-md);
+  font-size: var(--heading-md) !important;
 }
 
 .text-sm {
-  font-size: var(--body-md);
+  font-size: var(--body-md) !important;
 }
 
 .text-xs {
-  font-size: var(--body-sm);
+  font-size: var(--body-sm) !important;
 }
 
 .text-white {
