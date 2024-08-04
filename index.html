@@ -416,9 +416,10 @@
               architecto. Dolores nostrum enim et tenetur
             </p>
           </div>
-          <div class="flex flex-col gap-4 py-6">
-            <div class="flex gap-4">
-              <div class="rounded-lg shadow overflow-hidden">
+          <!------------ cards slider  ----------------->
+          <div class="slider-container flex flex-col gap-4 py-6">
+            <div class="card-slider flex">
+              <div class="card rounded-lg shadow overflow-hidden">
                 <div class="events-list-img">
                   <img src="/assets/images/event-1.png" />
                 </div>
@@ -440,7 +441,7 @@
                   <img src="/assets/icons/Icon.svg" alt="" />
                 </div>
               </div>
-              <div class="rounded-lg shadow overflow-hidden">
+              <div class="card rounded-lg shadow overflow-hidden">
                 <div class="events-list-img">
                   <img src="/assets/images/event-2.png" />
                 </div>
@@ -462,7 +463,7 @@
                   <img src="/assets/icons/Icon.svg" alt="" />
                 </div>
               </div>
-              <div class="rounded-lg shadow overflow-hidden">
+              <div class="card rounded-lg shadow overflow-hidden">
                 <div class="events-list-img">
                   <img src="/assets/images/event-3.png" />
                 </div>
@@ -484,7 +485,7 @@
                   <img src="/assets/icons/Icon.svg" alt="" />
                 </div>
               </div>
-              <div class="rounded-lg shadow overflow-hidden">
+              <div class="card rounded-lg shadow overflow-hidden">
                 <div class="events-list-img">
                   <img src="/assets/images/event-4.png" />
                 </div>
@@ -506,8 +507,76 @@
                   <img src="/assets/icons/Icon.svg" alt="" />
                 </div>
               </div>
+              <div class="card rounded-lg shadow overflow-hidden">
+                <div class="events-list-img">
+                  <img src="/assets/images/event-1.png" />
+                </div>
+                <div class="flex flex-col justify-between p-4 gap-8">
+                  <div>
+                    <span class="text-xs text-gray">Category</span>
+                    <h3 class="text-primary-dark text-sm font-medium">
+                      Event Title goes here
+                    </h3>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="text-xs text-gray"
+                      >Tuesday, Jun 5, 12 AM - 1:00 PM</span
+                    >
+                    <span class="text-xs text-primary">Location</span>
+                  </div>
+                </div>
+                <div class="border-t border-t-gray-100 p-2 px-4">
+                  <img src="/assets/icons/Icon.svg" alt="" />
+                </div>
+              </div>
+              <div class="card rounded-lg shadow overflow-hidden">
+                <div class="events-list-img">
+                  <img src="/assets/images/event-1.png" />
+                </div>
+                <div class="flex flex-col justify-between p-4 gap-8">
+                  <div>
+                    <span class="text-xs text-gray">Category</span>
+                    <h3 class="text-primary-dark text-sm font-medium">
+                      Event Title goes here
+                    </h3>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="text-xs text-gray"
+                      >Tuesday, Jun 5, 12 AM - 1:00 PM</span
+                    >
+                    <span class="text-xs text-primary">Location</span>
+                  </div>
+                </div>
+                <div class="border-t border-t-gray-100 p-2 px-4">
+                  <img src="/assets/icons/Icon.svg" alt="" />
+                </div>
+              </div>
+              <div class="card rounded-lg shadow overflow-hidden">
+                <div class="events-list-img">
+                  <img src="/assets/images/event-1.png" />
+                </div>
+                <div class="flex flex-col justify-between p-4 gap-8">
+                  <div>
+                    <span class="text-xs text-gray">Category</span>
+                    <h3 class="text-primary-dark text-sm font-medium">
+                      Event Title goes here
+                    </h3>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="text-xs text-gray"
+                      >Tuesday, Jun 5, 12 AM - 1:00 PM</span
+                    >
+                    <span class="text-xs text-primary">Location</span>
+                  </div>
+                </div>
+                <div class="border-t border-t-gray-100 p-2 px-4">
+                  <img src="/assets/icons/Icon.svg" alt="" />
+                </div>
+              </div>
             </div>
-            <div class="flex gap-2 justify-center py-6">
+            <div class="pagination"></div>
+
+            <!-- <div class="flex gap-2 justify-center py-6">
               <button class="rounded-full p-2 border border-primary bg-white">
                 <div class="rounded-full p-2 bg-primary border-0"></div>
               </button>
@@ -520,7 +589,7 @@
               <button class="rounded-full p-2 border border-primary bg-white">
                 <div class="rounded-full p-2"></div>
               </button>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="flex gap-8">
@@ -1242,5 +1311,47 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="/js/index.js"></script>
+    <!----------- cards slider script -------------->
+    <script>
+      $(document).ready(function () {
+        var $slider = $(".card-slider");
+        var $cards = $(".card");
+        var cardWidth = $cards.outerWidth(true);
+        var totalCards = $cards.length;
+        var visibleCards = 3; // Number of visible cards at once
+        var cardsPerPage = visibleCards; // Number of cards to show per page
+        var totalPages = Math.ceil(totalCards / cardsPerPage);
+        var currentPage = 0;
+
+        // Function to update slider position
+        function updateSlider() {
+          var offset = -currentPage * cardWidth * cardsPerPage;
+          $slider.css("transform", "translateX(" + offset + "px)");
+        }
+
+        // Function to generate pagination buttons
+        function createPagination() {
+          var $pagination = $(".pagination");
+          $pagination.empty(); // Clear previous buttons
+          for (var i = 0; i < totalPages; i++) {
+            $pagination.append('<button data-page="' + i + '">' + "</button>");
+          }
+          $pagination.find("button").first().addClass("active"); // Set the first button as active
+        }
+
+        // Event handler for pagination buttons
+        $(document).on("click", ".pagination button", function () {
+          currentPage = $(this).data("page");
+          updateSlider();
+          $(".pagination button").removeClass("active");
+          $(this).addClass("active");
+        });
+
+        // Initialize
+        createPagination();
+        updateSlider();
+      });
+    </script>
+    <!-----------end cards slider script -------------->
   </body>
 </html>

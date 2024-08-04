@@ -932,6 +932,53 @@ footer {
   color: white;
 }
 
+/*----- start  cards slider ----------- */
+.slider-container {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.card-slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.card {
+  min-width: 300px;
+  margin: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.pagination {
+  text-align: center;
+  margin-top: 10px;
+}
+.pagination button {
+  background: transparent;
+  color: white;
+  border: 1px solid #001081;
+  padding: 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+}
+.pagination button.active::before {
+  content: "";
+  position: absolute;
+  background: #001081;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*-------end cards slider ----------*/
+
 @media (max-width: 1200px) {
   :root {
     /* Adjusted font sizes for screens smaller than 1200px */
