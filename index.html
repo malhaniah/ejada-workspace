@@ -417,7 +417,10 @@
             </p>
           </div>
           <!------------ cards slider  ----------------->
-          <div class="slider-container flex flex-col gap-4 py-6">
+          <div
+            class="slider-container flex flex-col gap-4 py-6"
+            id="featured-slider"
+          >
             <div class="card-slider flex">
               <div class="card rounded-lg shadow overflow-hidden">
                 <div class="events-list-img">
@@ -1314,44 +1317,45 @@
     <!----------- cards slider script -------------->
     <script>
       $(document).ready(function () {
-        var $slider = $(".card-slider");
-        var $cards = $(".card");
-        var cardWidth = $cards.outerWidth(true);
-        var totalCards = $cards.length;
-        var visibleCards = 3; // Number of visible cards at once
-        var cardsPerPage = visibleCards; // Number of cards to show per page
-        var totalPages = Math.ceil(totalCards / cardsPerPage);
-        var currentPage = 0;
+        function initializeSlider(sliderId, slidesToShow) {
+          const $slider = $(sliderId);
+          const $container = $slider.find(".card-slider");
+          const $cards = $container.children();
+          var totalSlides = $cards.length;
+          var cardWidth = $cards.outerWidth(true);
+          var slidesToShowWidth = cardWidth * slidesToShow;
+          let currentIndex = 0;
 
-        // Function to update slider position
-        function updateSlider() {
-          cardWidth = $cards.outerWidth(true);
-
-          var offset = -currentPage * cardWidth * cardsPerPage;
-          $slider.css("transform", "translateX(" + offset + "px)");
-        }
-
-        // Function to generate pagination buttons
-        function createPagination() {
-          var $pagination = $(".pagination");
-          $pagination.empty(); // Clear previous buttons
-          for (var i = 0; i < totalPages; i++) {
-            $pagination.append('<button data-page="' + i + '">' + "</button>");
+          // Create pagination dots
+          const $pagination = $slider.find(".pagination");
+          for (let i = 0; i < Math.ceil(totalSlides / slidesToShow); i++) {
+            $pagination.append("<button></button>");
           }
-          $pagination.find("button").first().addClass("active"); // Set the first button as active
+          $pagination.find("button").first().addClass("active");
+
+          function updatePagination() {
+            cardWidth = $cards.outerWidth(true);
+            slidesToShowWidth = cardWidth * slidesToShow;
+            $pagination
+              .find("button")
+              .removeClass("active")
+              .eq(currentIndex)
+              .addClass("active");
+          }
+
+          $pagination.find("button").click(function () {
+            const index = $(this).index();
+            currentIndex = index;
+            $container.css(
+              "transform",
+              `translateX(-${currentIndex * slidesToShowWidth}px)`
+            );
+            updatePagination();
+          });
         }
 
-        // Event handler for pagination buttons
-        $(document).on("click", ".pagination button", function () {
-          currentPage = $(this).data("page");
-          updateSlider();
-          $(".pagination button").removeClass("active");
-          $(this).addClass("active");
-        });
-
-        // Initialize
-        createPagination();
-        updateSlider();
+        initializeSlider("#featured-slider", 3); // 3 cards visible at a time
+        // initializeSlider("#slider2-id", 3); // 3 cards visible at a time
       });
     </script>
     <!-----------end cards slider script -------------->
