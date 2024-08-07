@@ -975,7 +975,7 @@ footer {
   transform: translate(-50%, -50%);
 }
 
-/* --------docunebt table scroll  & lables width -----------*/
+/* --------documents table scroll  & lables width -----------*/
 .documents-table {
   overflow-x: scroll;
 }
