@@ -60,30 +60,76 @@
               Workspace
               <img src="/assets/icons/arrow.svg" />
             </a>
+            <ul
+              class="hide drop-down-list flex bg-primary p-4 shadow flex-col rounded-lg w-96 justify-between gap-4 absolute my-6"
+            >
+              <li class="text-white font-bold">Employee Services</li>
+              <li><a href="#" class="text-white">Lorem ipsum </a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
               Employee Services
               <img src="/assets/icons/arrow.svg" />
             </a>
+            <ul
+              class="hide drop-down-list flex bg-primary p-4 shadow flex-col rounded-lg w-96 justify-between gap-4 absolute my-6"
+            >
+              <li class="text-white font-bold">Employee Services</li>
+              <li><a href="#" class="text-white">Lorem ipsum </a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+            </ul>
           </li>
+
           <li class="nav-item">
             <a href="#" class="nav-link">
               Departments
               <img src="/assets/icons/arrow.svg" />
             </a>
+            <ul
+              class="hide drop-down-list flex bg-primary p-4 shadow flex-col rounded-lg w-96 justify-between gap-4 absolute my-6"
+            >
+              <li class="text-white font-bold">Employee Services</li>
+              <li><a href="#" class="text-white">Lorem ipsum </a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
               Resources
               <img src="/assets/icons/arrow.svg" />
             </a>
+            <ul
+              class="hide drop-down-list flex bg-primary p-4 shadow flex-col rounded-lg w-96 justify-between gap-4 absolute my-6"
+            >
+              <li class="text-white font-bold">Employee Services</li>
+              <li><a href="#" class="text-white">Lorem ipsum </a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
               Knowledge
               <img src="/assets/icons/arrow.svg" />
             </a>
+            <ul
+              class="hide drop-down-list flex bg-primary p-4 shadow flex-col rounded-lg w-96 justify-between gap-4 absolute my-6"
+            >
+              <li class="text-white font-bold">Employee Services</li>
+              <li><a href="#" class="text-white">Lorem ipsum </a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+              <li><a href="#" class="text-white">Lorem ipsum</a></li>
+            </ul>
           </li>
           <li class="nav-item"><a href="#" class="nav-link">News</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
@@ -500,5 +546,33 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="/js/index.js"></script>
+    <!------------ start nav drop-down script ---------->
+    <script>
+      let navItem = document.querySelectorAll(".nav-item");
+      let navItemUL = document.querySelectorAll(".drop-down-list");
+
+      navItem.forEach((element, index) => {
+        element.addEventListener("click", (e) => {
+          navItemUL.forEach((ele) => {
+            ele.classList.add("hide");
+          });
+          navItemUL[index - 1].classList.toggle("hide");
+          console.log("test" + index);
+        });
+      });
+
+      //   ////////// hide nav list when click outside
+      window.addEventListener("click", function (e) {
+        if (
+          !e.target.closest(".nav-item") &&
+          !e.target.closest(".drop-down-list")
+        ) {
+          navItemUL.forEach((ele) => {
+            ele.classList.add("hide");
+          });
+        }
+      });
+    </script>
+    <!---------end  nav drop-down script ---------->
   </body>
 </html>
