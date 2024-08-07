@@ -855,12 +855,12 @@ nav {
   -webkit-transform: scaleY(-1);
   transform: scaleY(-1);
 }
-.hide {
-  display: none;
+
+.addditional-resources-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.show {
-  display: block;
-}
+
 /*---- end  home page----- */
 /* ---the drop down --- */
 
@@ -980,7 +980,12 @@ footer {
   }
 }
 /*-------end cards slider ----------*/
-
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
 @media (max-width: 1200px) {
   :root {
     /* Adjusted font sizes for screens smaller than 1200px */
