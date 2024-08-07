@@ -974,6 +974,29 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* --------docunebt table scroll  & lables width -----------*/
+.documents-table {
+  overflow-x: scroll;
+}
+.documents-table::-webkit-scrollbar {
+  height: 5px;
+  background-color: rgb(231, 231, 231);
+}
+
+.documents-table::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 3px;
+}
+.width-100p {
+  width: 100%;
+}
+.apply-filter-btn {
+  white-space: nowrap;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+/* ------------------------------------ */
 @media (max-width: 1366px) {
   .card {
     min-width: 256px;
