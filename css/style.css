@@ -997,12 +997,17 @@ footer {
   margin-top: 20px;
 }
 /* ------------------------------------ */
+
 @media (max-width: 1366px) {
   .card {
     min-width: 256px;
   }
 }
 /*-------end cards slider ----------*/
+.form-checkbox {
+  width: 20px;
+  height: 20px;
+}
 .hide {
   display: none;
 }
