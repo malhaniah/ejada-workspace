@@ -212,42 +212,22 @@
                 <ul class="pl-2 py-4 flex flex-col gap-2">
                   <li>
                     <button
-                      class="flex items-center gap-2 border-0 bg-off p-3 w-full"
+                      class="flex items-center gap-2 border-0 bg-off p-3 w-full font-semibold text-primary-dark"
                     >
                       <img src="/assets/icons/active-rounded.svg" />
                       Personal Services
                     </button>
                     <!-- Start Options  -->
-                    <ul class="pl-4 py-2 flex flex-col gap-2">
+                    <ul class="pl-6 py-2 flex flex-col gap-2">
                       <li
                         class="p-3 border-b border-b-gray-100 text-primary-dark text-xs"
                       >
-                        Manage personal details
-                      </li>
-                      <li
-                        class="p-3 border-b border-b-gray-100 text-primary-dark text-xs"
-                      >
-                        Manage personal details
-                      </li>
-                      <li
-                        class="p-3 border-b border-b-gray-100 text-primary-dark text-xs"
-                      >
-                        Manage personal details
-                      </li>
-                      <li
-                        class="p-3 border-b border-b-gray-100 text-primary-dark text-xs"
-                      >
-                        Manage personal details
-                      </li>
-                      <li
-                        class="p-3 border-b border-b-gray-100 text-primary-dark text-xs"
-                      >
-                        Manage personal details
-                      </li>
-                      <li
-                        class="p-3 border-b border-b-gray-100 text-primary-dark text-xs"
-                      >
-                        Manage personal details
+                        <button
+                          onclick="$('#categories').hide(), $('#details').show()"
+                          class="bg-transparent border-0 text-primary-dark text-xs"
+                        >
+                          Manage personal details
+                        </button>
                       </li>
                     </ul>
                     <!-- End Options  -->
@@ -328,8 +308,8 @@
               </li>
             </ul>
           </div>
-          <!-- Partners list -->
-          <div class="gap-12 w-full flex-basis-3">
+          <!-- Categories -->
+          <div class="gap-12 w-full flex-basis-3" id="categories">
             <h1 class="text-lg text-primary-dark">Personal Services</h1>
             <div class="py-6 flex flex-col gap-4">
               <div class="flex gap-4">
@@ -556,6 +536,156 @@
               </div>
             </div>
           </div>
+          <div class="flex flex-col gap-4 hide w-2-3" id="details">
+            <div class="flex justify-between items-center">
+              <h3 class="text-primary-dark text-lg">Manage Personal Details</h3>
+              <div class="flex gap-2">
+                <button
+                  class="bg-primary text-white rounded-md border-0 px-6 py-3"
+                >
+                  Start Now
+                </button>
+                <button
+                  class="bg-gray text-white rounded-md border-0 p-3 flex items-center justify-center"
+                >
+                  <img src="/assets/icons/arrows-circle-arrow-left.svg" />
+                </button>
+              </div>
+            </div>
+            <div class="py-6 px-6">
+              <div class="flex flex-col gap-12">
+                <h3 class="flex items-center gap-2 font-normal text-md">
+                  <img
+                    src="/assets/icons/material-symbols-overview-key-rounded.svg"
+                  />Overview
+                </h3>
+                <p class="font-semibold text-sm">
+                  Together, we transform challenges into opportunities,
+                  leveraging collective expertise to create solutions that
+                  redefine the future of software technology.
+                </p>
+                <ul class="list-style flex flex-col gap-6">
+                  <li class="text-sm">
+                    Collaborate to leverage expertise for innovative
+                    problem-solving to ensure high-quality, top-notch solutions
+                    for intricate issues.
+                  </li>
+                  <li class="text-sm">
+                    Prioritize the needs and satisfaction of customers by
+                    delivering tailored and diverse solutions.
+                  </li>
+                  <li class="text-sm">
+                    Focus on providing novel and creative solutions that address
+                    complex challenges in unique ways.
+                  </li>
+                </ul>
+              </div>
+              <div class="flex flex-col gap-12 mt-6">
+                <h3 class="flex items-center gap-2 font-normal text-md">
+                  <img
+                    src="/assets/icons/material-symbols-overview-key-rounded.svg"
+                  />How to start
+                </h3>
+                <p class="font-semibold text-sm">
+                  Together, we transform challenges into opportunities,
+                  leveraging collective expertise to create solutions that
+                  redefine the future of software technology.
+                </p>
+                <ul class="list-style flex flex-col gap-6">
+                  <li class="text-sm">
+                    Collaborate to leverage expertise for innovative
+                    problem-solving to ensure high-quality, top-notch solutions
+                    for intricate issues.
+                  </li>
+                  <li class="text-sm">
+                    Prioritize the needs and satisfaction of customers by
+                    delivering tailored and diverse solutions.
+                  </li>
+                  <li class="text-sm">
+                    Focus on providing novel and creative solutions that address
+                    complex challenges in unique ways.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h1 class="text-lg text-primary-dark">Related Services</h1>
+            <div class="py-6 flex flex-col gap-4">
+              <div class="flex gap-4">
+                <div
+                  class="bg-off shadow rounded-md flex p-6 flex-1 justify-between gap-6"
+                >
+                  <div class="flex flex-col gap-5">
+                    <h3 class="text-primary-dark text-sm">
+                      Manager Personal Details
+                    </h3>
+                    <p class="text-primary-dark text-xs">
+                      But I must explain to you how all this mistaken idea of
+                      denouncing pleasure and praising.
+                    </p>
+                    <button
+                      class="bg-transparent text-primary-dark border-0 w-fit flex items-center gap-2"
+                    >
+                      Learn More
+                      <img src="/assets/icons/info-filled.svg" />
+                    </button>
+                  </div>
+                  <div
+                    class="rounded-full bg-primary w-14 h-14 p-4 flex justify-center items-center text-white"
+                  >
+                    HR
+                  </div>
+                </div>
+                <div
+                  class="bg-off shadow rounded-md flex p-6 flex-1 justify-between gap-6"
+                >
+                  <div class="flex flex-col gap-5">
+                    <h3 class="text-primary-dark text-sm">
+                      Manager Personal Details
+                    </h3>
+                    <p class="text-primary-dark text-xs">
+                      But I must explain to you how all this mistaken idea of
+                      denouncing pleasure and praising.
+                    </p>
+                    <button
+                      class="bg-transparent text-primary-dark border-0 w-fit flex items-center gap-2"
+                    >
+                      Learn More
+                      <img src="/assets/icons/info-filled.svg" />
+                    </button>
+                  </div>
+                  <div
+                    class="rounded-full bg-primary w-14 h-14 p-4 flex justify-center items-center text-white"
+                  >
+                    HR
+                  </div>
+                </div>
+                <div
+                  class="bg-off shadow rounded-md flex p-6 flex-1 justify-between gap-6"
+                >
+                  <div class="flex flex-col gap-5">
+                    <h3 class="text-primary-dark text-sm">
+                      Manager Personal Details
+                    </h3>
+                    <p class="text-primary-dark text-xs">
+                      But I must explain to you how all this mistaken idea of
+                      denouncing pleasure and praising.
+                    </p>
+                    <button
+                      class="bg-transparent text-primary-dark border-0 w-fit flex items-center gap-2"
+                    >
+                      Learn More
+                      <img src="/assets/icons/info-filled.svg" />
+                    </button>
+                  </div>
+                  <div
+                    class="rounded-full bg-primary w-14 h-14 p-4 flex justify-center items-center text-white"
+                  >
+                    HR
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -662,52 +792,6 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="/js/index.js"></script>
-    <!----------- cards slider script -------------->
-
-    <script>
-      $(document).ready(function () {
-        function initializeSlider(sliderId, slidesToShow) {
-          const $slider = $(sliderId);
-          const $container = $slider.find(".card-slider");
-          const $cards = $container.children();
-          var totalSlides = $cards.length;
-          var cardWidth = $cards.outerWidth(true);
-          var slidesToShowWidth = cardWidth * slidesToShow;
-          let currentIndex = 0;
-
-          // Create pagination dots
-          const $pagination = $slider.find(".pagination");
-          for (let i = 0; i < Math.ceil(totalSlides / slidesToShow); i++) {
-            $pagination.append("<button></button>");
-          }
-          $pagination.find("button").first().addClass("active");
-
-          function updatePagination() {
-            cardWidth = $cards.outerWidth(true);
-            slidesToShowWidth = cardWidth * slidesToShow;
-            $pagination
-              .find("button")
-              .removeClass("active")
-              .eq(currentIndex)
-              .addClass("active");
-          }
-
-          $pagination.find("button").click(function () {
-            const index = $(this).index();
-            currentIndex = index;
-            $container.css(
-              "transform",
-              `translateX(-${currentIndex * slidesToShowWidth}px)`
-            );
-            updatePagination();
-          });
-        }
-
-        initializeSlider("#featured-slider", 3); // 3 cards visible at a time
-        initializeSlider("#top-announcements-slider", 3);
-      });
-    </script>
-    <!-----------end cards slider script -------------->
     <!------------ start nav drop-down script ---------->
     <script>
       let navItem = document.querySelectorAll(".nav-item");
@@ -736,5 +820,8 @@
       });
     </script>
     <!---------end  nav drop-down script ---------->
+    <script>
+      const categories = $("#categories");
+    </script>
   </body>
 </html>
