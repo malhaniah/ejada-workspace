@@ -1168,3 +1168,27 @@ footer {
     line-height: 3vw;
   }
 }
+
+/* Custom calendar icon */
+input[type="date"] {
+  width: 100%;
+  position: relative;
+  padding-right: 30px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url("/assets/icons/Icon.svg") no-repeat;
+  background-size: 20px 25px;
+  color: transparent;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* For Internet Explorer */
+input[type="date"]::-ms-clear {
+  display: none;
+}
