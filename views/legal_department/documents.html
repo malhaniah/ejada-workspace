@@ -918,6 +918,23 @@
             </label>
             <!-- --------- -->
           </div>
+          <!----  text area field---->
+          <label class="flex flex-col gap-2 flex-1">
+            <span>Description<span class="text-gray"></span></span>
+            <div
+              class="flex items-center gap-2 rounded-md border border-gray-300"
+            >
+              <textarea
+                id="limited-textarea"
+                rows="4"
+                placeholder="Type here..."
+              ></textarea>
+              <p id="error-message" style="color: red; display: none">
+                You can only enter up to 4 rows!
+              </p>
+            </div>
+          </label>
+          <!-- -------------------- -->
         </div>
         <div class="w-full flex justify-end gap-3">
           <button class="outlined-btn rounded-md">Cancel</button>

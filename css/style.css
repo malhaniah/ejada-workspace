@@ -1192,3 +1192,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 input[type="date"]::-ms-clear {
   display: none;
 }
+
+/* ------------------------------------ */
+/* for textarea style  */
+#limited-textarea {
+  width: 100%;
+  height: auto;
+  resize: none;
+  overflow-y: auto;
+  padding: 15px;
+  border: none;
+}
+#limited-textarea:focus {
+  outline: none;
+}
+/* ----------------------------- */
