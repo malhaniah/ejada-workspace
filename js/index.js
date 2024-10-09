@@ -94,8 +94,8 @@
 
 Highcharts.chart("container", {
   chart: {
-    height: 600,
-    inverted: true,
+    height: 1200,
+    inverted: false,
   },
 
   title: {
@@ -206,7 +206,7 @@ Highcharts.chart("container", {
         color: "white",
       },
       borderColor: "white",
-      nodeWidth: "50",
+      nodeWidth: "100",
     },
   ],
   tooltip: {
