@@ -790,7 +790,7 @@ nav {
   gap: 1rem;
   position: relative;
   overflow: hidden;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   border-radius: 40px;
   z-index: 1;
 }
