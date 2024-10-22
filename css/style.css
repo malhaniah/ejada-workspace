@@ -783,11 +783,10 @@ nav {
 }
 
 .card-component {
-  padding: 50px 160px;
-  width: 1200px;
-  height: 300px;
-  display: flex;
-  flex-flow: column nowrap;
+  padding: 90px 100px;
+  /* width: 1200px; */
+  height: auto;
+  /* display: flex; */
   gap: 1rem;
   position: relative;
   overflow: hidden;
@@ -797,18 +796,29 @@ nav {
 }
 
 .card-component p {
-  width: 70%;
+  /* width: 70%; */
 }
 
-.card-component img {
+.card-component .card-shape {
   position: absolute;
   top: -10%;
-  left: -7%;
-  height: 100%;
+  right: -11%;
+  /* height: 100%; */
   object-fit: contain;
-  z-index: -1;
+  z-index: 2;
 }
-
+.text-green {
+  color: #1fed93;
+}
+.card-component .ceo-messege-image {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+.card-component .ceo-messege-image img {
+  min-width: 100%;
+  padding: 50px;
+}
 /* ----- End Of Certificates ----- */
 
 /*------ home page------ */
